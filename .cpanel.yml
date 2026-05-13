@@ -1,0 +1,14 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/develako/public_html/
+
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R partials $DEPLOYPATH
+
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp features.php $DEPLOYPATH
+    - /bin/cp pricing.php $DEPLOYPATH
+    - /bin/cp contact.php $DEPLOYPATH
