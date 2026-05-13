@@ -20,8 +20,8 @@ $pageDescription = "RepairPOS is point of sale and job management software for r
         <h1>Run your repair shop from one simple system.</h1>
         <p>Manage job tickets, customer details, photos, invoices, payments and pickup notifications from drop-off or mail-in to completion.</p>
         <div class="d-flex flex-column flex-sm-row gap-3">
-          <a class="btn btn-primary btn-lg" href="contact.php">Start Free Trial</a>
-          <a class="btn btn-outline-light btn-lg" href="features.php">View Features</a>
+          <a class="btn btn-primary btn-lg" href="contact">Start Free Trial</a>
+          <a class="btn btn-outline-light btn-lg" href="features">View Features</a>
         </div>
       </div>
     </div>
@@ -344,7 +344,7 @@ $pageDescription = "RepairPOS is point of sale and job management software for r
           Setup is simple and new features are added regularly.
         </p>
 
-        <a class="btn btn-primary w-100" href="contact.php">
+        <a class="btn btn-primary w-100" href="contact">
           Request Demo
         </a>
 
@@ -366,7 +366,7 @@ $pageDescription = "RepairPOS is point of sale and job management software for r
         </div>
       </div>
       <div class="d-flex flex-column flex-sm-row gap-3">
-        <a class="btn btn-primary" href="contact.php">Contact RepairPOS</a>
+        <a class="btn btn-primary" href="contact">Contact RepairPOS</a>
         <a class="btn btn-outline-light" href="mailto:hello@repairpos.co">Email Us</a>
       </div>
     </div>

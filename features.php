@@ -313,7 +313,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
           </div>
 
           <div class="col-lg-4 text-lg-end">
-            <a class="btn btn-primary btn-lg" href="contact.php">
+            <a class="btn btn-primary btn-lg" href="contact">
               Book a Demo
             </a>
           </div>
