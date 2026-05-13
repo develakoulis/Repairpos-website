@@ -42,6 +42,7 @@ $pageDescription = "Contact RepairPOS to book a demo or start a free trial of PO
               </p>
             </div>
 
+
               <form id="contactForm" action="send-contact.php" method="POST">
                 <div class="row g-3">
 
@@ -87,6 +88,18 @@ $pageDescription = "Contact RepairPOS to book a demo or start a free trial of PO
                 <div class="col-12 d-grid">
                   <button class="btn btn-primary btn-lg" type="submit">Send enquiry</button>
                 </div>
+
+                <?php if (isset($_GET['success'])): ?>
+  <div class="alert alert-success">
+    Thanks — your enquiry has been sent.
+  </div>
+<?php endif; ?>
+
+<?php if (isset($_GET['error'])): ?>
+  <div class="alert alert-danger">
+    Sorry, something went wrong. Please email hello@repairpos.co.
+  </div>
+<?php endif; ?>
 
               </div>
             </form>
