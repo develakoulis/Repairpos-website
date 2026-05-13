@@ -42,8 +42,8 @@ $pageDescription = "Contact RepairPOS to book a demo or start a free trial of PO
               </p>
             </div>
 
-            <form id="contactForm">
-              <div class="row g-3">
+              <form id="contactForm" action="send-contact.php" method="POST">
+                <div class="row g-3">
 
                 <div class="col-md-6">
                   <label class="form-label" for="name">Full name</label>
@@ -137,13 +137,6 @@ $pageDescription = "Contact RepairPOS to book a demo or start a free trial of PO
 <?php include 'partials/footer.php'; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-  document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    alert('Thanks — this form needs to be connected to your email or CRM before launch.');
-  });
-</script>
 
 </body>
 </html>
