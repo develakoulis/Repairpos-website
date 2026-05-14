@@ -29,26 +29,29 @@ $mail = new PHPMailer(true);
 
 try {
 
-    $mail->isSMTP();
+  $mail->isSMTP();
 
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
+  $mail->Host = 'smtp.gmail.com';
+  $mail->SMTPAuth = true;
 
-    $mail->Username = 'hello@repairpos.co';
-    $mail->Password = '4Amon922';
+  $mail->Username = 'billing@evans.com.au';
+  $mail->Password = 'wpjwcvmmnfsglyrz';
 
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
+  $mail->SMTPSecure = 'ssl';
+  $mail->Port = 465;
 
-    $mail->setFrom('hello@repairpos.co', 'RepairPOS');
+  $mail->setFrom(
+      'billing@evans.com.au',
+      'RepairPOS'
+  );
 
-    $mail->addAddress('hello@repairpos.co');
+  $mail->addAddress('hello@repairpos.co');
 
-    $mail->addReplyTo($email, $name);
+  $mail->addReplyTo($email, $name);
 
-    $mail->isHTML(false);
+  $mail->isHTML(true);
 
-    $mail->Subject = 'New RepairPOS Enquiry from ' . $business;
+  $mail->Subject = 'New RepairPOS Enquiry from ' . $business;
 
     $mail->Body =
 "New RepairPOS enquiry
