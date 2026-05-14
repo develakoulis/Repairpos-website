@@ -1,6 +1,14 @@
 <?php
+
+require_once $_SERVER['DOCUMENT_ROOT'] . '/pos/PHPMailer/src/Exception.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/pos/PHPMailer/src/PHPMailer.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/pos/PHPMailer/src/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-    header("Location: contact");
+    header("Location: /contact");
     exit;
 }
 
@@ -12,31 +20,65 @@ $industry = trim($_POST['industry'] ?? '');
 $message  = trim($_POST['message'] ?? '');
 
 if ($name === '' || $business === '' || $email === '' || $message === '') {
-    header("Location: contact?error=missing");
+    header("Location: /contact?error=missing");
     exit;
 }
 
-$to = "hello@repairpos.co";
-$subject = "New RepairPOS Enquiry from " . $business;
+$mail = new PHPMailer(true);
 
-$body =
-"New RepairPOS enquiry\n\n" .
-"Name: {$name}\n" .
-"Business: {$business}\n" .
-"Email: {$email}\n" .
-"Phone: {$phone}\n" .
-"Industry: {$industry}\n\n" .
-"Message:\n{$message}\n";
+try {
 
-$headers  = "From: RepairPOS Website <no-reply@repairpos.co>\r\n";
-$headers .= "Reply-To: {$email}\r\n";
+    $mail->isSMTP();
 
-$sent = mail($to, $subject, $body, $headers);
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
 
-if ($sent) {
-    header("Location: contact?success=1");
+    $mail->Username = 'hello@repairpos.co';
+    $mail->Password = '4Amon922';
+
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
+
+    $mail->setFrom('hello@repairpos.co', 'RepairPOS');
+
+    $mail->addAddress('hello@repairpos.co');
+
+    $mail->addReplyTo($email, $name);
+
+    $mail->isHTML(false);
+
+    $mail->Subject = 'New RepairPOS Enquiry from ' . $business;
+
+    $mail->Body =
+"New RepairPOS enquiry
+
+Name: {$name}
+
+Business: {$business}
+
+Email: {$email}
+
+Phone: {$phone}
+
+Industry: {$industry}
+
+Message:
+{$message}
+";
+
+    $mail->send();
+
+    header("Location: /contact?success=1");
+    exit;
+
+} catch (Exception $e) {
+
+    file_put_contents(
+        __DIR__ . '/mail-error-log.txt',
+        date('Y-m-d H:i:s') . ' - ' . $mail->ErrorInfo . PHP_EOL,
+        FILE_APPEND
+    );
+
+    header("Location: /contact?error=mail");
     exit;
 }
-
-header("Location: contact?error=mail");
-exit;
