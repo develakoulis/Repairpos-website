@@ -19,10 +19,6 @@ function repairpos_log($message) {
     );
 }
 
-repairpos_log('Form handler loaded.');
-
-repairpos_log('REQUEST_METHOD=' . $_SERVER["REQUEST_METHOD"]);
-repairpos_log('POST=' . print_r($_POST, true));
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     repairpos_log('Invalid request method: ' . $_SERVER["REQUEST_METHOD"]);
