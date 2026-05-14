@@ -1,11 +1,12 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/pos/PHPMailer/src/Exception.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/pos/PHPMailer/src/PHPMailer.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/pos/PHPMailer/src/SMTP.php';
-
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+
+require_once 'pos/PHPMailer/PHPMailer.php';
+require_once 'pos/PHPMailer/SMTP.php';
+require_once 'pos/PHPMailer/Exception.php';
+
+
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     header("Location: /contact");
