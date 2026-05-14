@@ -43,7 +43,7 @@ $pageDescription = "Contact RepairPOS to book a demo or start a free trial of PO
             </div>
 
 
-              <form id="contactForm" action="/send-contact.php" method="POST">
+              <form id="contactForm" action="send-contact.php" method="POST">
                 <div class="row g-3">
 
                 <div class="col-md-6">
