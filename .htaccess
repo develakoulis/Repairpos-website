@@ -2,12 +2,16 @@ DirectoryIndex index.php
 
 RewriteEngine On
 
+# Do not rewrite form handler
+RewriteRule ^send-contact\.php$ - [L]
+
 # Redirect /index and /index.php to homepage
 RewriteRule ^index$ / [R=301,L]
 RewriteRule ^index\.php$ / [R=301,L]
 
-# Remove .php from URLs
+# Remove .php from public page URLs, except send-contact.php
 RewriteCond %{THE_REQUEST} \s/([^\s]+)\.php[\s?] [NC]
+RewriteCond %{REQUEST_URI} !^/send-contact\.php$ [NC]
 RewriteRule ^ /%1 [R=301,L]
 
 # Internally load .php files when extensionless URL is requested
