@@ -17,14 +17,36 @@
 
       <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
 
+        <!-- INDUSTRIES DROPDOWN -->
+        <li class="nav-item dropdown">
 
+          <a class="nav-link dropdown-toggle"
+             href="#"
+             id="industriesDropdown"
+             role="button"
+             data-bs-toggle="dropdown"
+             aria-expanded="false">
 
+            Industries
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-dark">
+
+            <li>
+              <a class="dropdown-item" href="shoe-repair-software.php">
+                Shoe Repair Software
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="features.php">
             Features
           </a>
         </li>
-
 
         <li class="nav-item">
           <a class="nav-link" href="contact.php">

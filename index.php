@@ -203,11 +203,11 @@ $pageDescription = "RepairPOS is point of sale and job management software for r
 
       <div class="col-md-6 col-lg-4">
         <div class="industry-card">
-          <img src="assets/images/shoe-repair.png" alt="Shoe repair workbench">
+        <a href="shoe-repair-software">  <img src="assets/images/shoe-repair.png" alt="Shoe repair workbench"></a>
           <div class="industry-content">
             <div class="industry-title">
               <div class="line-icon"><i class="bi bi-hammer"></i></div>
-              <h3>Shoe Repair</h3>
+              <h3><a href="shoe-repair-software">Shoe Repair</a></h3>
             </div>
             <p>Track resoles, heel work, polishing, pickups and customer history.</p>
           </div>

@@ -245,11 +245,13 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
-  text-decoration: underline;
+  color: none;
+  text-decoration: none;
 }
 a:hover {
-  color: var(--bs-link-hover-color);
+  color: none;
+  text-decoration: none;
+
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -10880,7 +10882,16 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.navbar a,
+footer a,
+.contact-banner a,
+.dropdown-item {
+  text-decoration: none !important;
+  color: #fff !important;
 }
 
 /* NAVBAR */
@@ -11040,6 +11051,7 @@ a {
   color: #b08b6f;
   font-size: 1.45rem;
 border: 1px solid rgba(176,139,111,0.18);
+margin-bottom: 1rem;
 }
 
 .feature-mini h3 {
@@ -11192,7 +11204,7 @@ border: 1px solid rgba(176,139,111,0.18);
 }
 
 .pricing-card h3 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
 }
 
 .pricing-card p,
@@ -11594,11 +11606,6 @@ footer a:hover {
 
   display: block;
 
-  filter:
-    brightness(0.92)
-    contrast(1.02)
-    saturate(0.92);
-
   transition:
     transform 0.5s ease,
     filter 0.35s ease;
@@ -11912,4 +11919,93 @@ footer a:hover {
     display: none;
   }
 
+}
+
+/* Navbar */
+
+.dropdown-menu-dark {
+  background: #121212;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 1rem;
+
+  padding: 0.6rem;
+}
+
+.dropdown-item {
+  color: rgba(255,255,255,0.82);
+
+  border-radius: 0.7rem;
+
+  padding: 0.7rem 1rem;
+
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: rgba(255,255,255,0.06);
+
+  color: #fff;
+}
+
+/* Services page */
+.integration-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.integration-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  padding: 1rem 1.35rem;
+
+  border-radius: 1rem;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: #fff;
+
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  transition: all 0.25s ease;
+}
+
+.integration-pill i {
+  color: #b08b6f;
+  font-size: 1.1rem;
+}
+
+.integration-pill:hover {
+  transform: translateY(-2px);
+  border-color: rgba(176,139,111,0.45);
+  background: rgba(255,255,255,0.06);
+}
+
+/* Shoe Repair Software Page */
+.shoe-repair-contact-banner {
+    position: relative;
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.96) 0%,
+        rgba(12, 12, 12, 0.82) 34%,
+        rgba(18, 18, 18, 0.28) 68%,
+        rgba(8, 8, 8, 0.58) 100%
+      ),
+      url('../assets/images/shoe-repair-software-hero.png')
+      72% center / cover no-repeat;
 }
