@@ -27,21 +27,75 @@
              data-bs-toggle="dropdown"
              aria-expanded="false">
 
-            Industries
+            Software
           </a>
 
           <ul class="dropdown-menu dropdown-menu-dark">
 
             <li>
-              <a class="dropdown-item" href="shoe-repair-software.php">
-                Shoe Repair Software
+              <a class="dropdown-item" href="shoe-repair-shop-software.php">
+                Shoe repair shop
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="tailor-shop-software.php">
+                Tailor
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="watch-repair-shop-software.php">
+                Watch repair shop
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="jewellery-repair-shop-software.php">
+                Jewellery repair shop
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="tailor-shop-software.php">
+                Tailor shop
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="dry-cleaning-pos-software.php">
+                Dry cleaning
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="bike-repair-shop-software.php">
+                Bike repair shop
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="mobile-phone-repair-shop-software.php">
+                Mobile phone repair shop
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="computer-repair-shop-software.php">
+              Computer repair shop
               </a>
             </li>
 
           </ul>
 
         </li>
-        
+
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.php">
+            Pricing
+          </a>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="features.php">
             Features

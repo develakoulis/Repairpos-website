@@ -2,8 +2,14 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Main Pages -->
+
   <url>
     <loc>https://repairpos.co/</loc>
+  </url>
+
+  <url>
+    <loc>https://repairpos.co/pricing</loc>
   </url>
 
   <url>
@@ -14,8 +20,42 @@
     <loc>https://repairpos.co/contact</loc>
   </url>
 
+  <!-- Industry Pages -->
+
   <url>
-    <loc>https://repairpos.co/shoe-repair-software</loc>
+    <loc>https://repairpos.co/shoe-repair-shop-software</loc>
+  </url>
+
+  <url>
+    <loc>https://repairpos.co/watch-repair-shop-software</loc>
+  </url>
+
+  <url>
+    <loc>https://repairpos.co/jewellery-repair-shop-software</loc>
+  </url>
+
+  <url>
+    <loc>https://repairpos.co/tailor-shop-software</loc>
+  </url>
+
+  <url>
+    <loc>https://repairpos.co/dry-cleaning-pos-software</loc>
+  </url>
+
+  <url>
+    <loc>https://repairpos.co/bike-repair-shop-software</loc>
+  </url>
+
+  <url>
+    <loc>https://repairpos.co/mobile-phone-repair-shop-software</loc>
+  </url>
+
+  <url>
+    <loc>https://repairpos.co/computer-repair-shop-software</loc>
+  </url>
+
+  <url>
+    <loc>https://repairpos.co/leather-repair-shop-software</loc>
   </url>
 
 </urlset>

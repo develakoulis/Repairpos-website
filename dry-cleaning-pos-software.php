@@ -1,6 +1,6 @@
 <?php
-$pageTitle = "Leather Goods & Shoe Repair Shop Software | RepairPOS";
-$pageDescription = "RepairPOS is modern repair shop software for shoe repair, handbag restoration and leather goods repair businesses. Manage repair tickets, mail-in jobs, payments, inventory, photos and workflow.";
+$pageTitle = "Dry Cleaning POS Software & Garment Tracking | RepairPOS";
+$pageDescription = "RepairPOS is dry cleaning POS software for garment tracking, customer tickets, payments, pickup reminders, order status and day-to-day dry cleaning workflow.";
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
 
 <main>
 
-  <section class="contact-banner shoe-repair-contact-banner shoe-repair-hero">
+  <section class="contact-banner dry-cleaning-contact-banner dry-cleaning-hero">
 
     <div class="hero-overlay"></div>
 
@@ -23,16 +23,15 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
       <div class="contact-banner-content">
 
         <div class="eyebrow">
-          Leather Goods & Shoe Repair Software
+          Dry Cleaning POS Software
         </div>
 
         <h1>
-          Modern software for shoe, handbag and leather repair shops.
+          Simple POS and garment tracking software for dry cleaners.
         </h1>
 
         <p>
-          Manage repair tickets, quotes, work orders, payments, inventory,
-          before-and-after photos and customer updates from one connected platform.
+          Manage customer orders, garment tickets, cleaning stages, payments, pickup reminders and staff workflow from one connected platform.
         </p>
 
         <a href="/contact" class="btn btn-primary btn-lg mt-4">
@@ -44,15 +43,14 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
     </div>
 
   </section>
+
   <section class="section-padding">
     <div class="container px-4 px-lg-5">
 
       <div class="section-title">
-        <h2>Built around real repair workflows</h2>
+        <h2>Built for dry cleaning and garment care workflows</h2>
         <p>
-          RepairPOS is designed for cobblers, leather repair workshops,
-          luxury handbag restoration studios and repair businesses offering
-          both storefront and mail-in services.
+          RepairPOS helps dry cleaners manage intake, garment notes, order status, customer communication and collection workflows without paper-heavy systems.
         </p>
       </div>
 
@@ -61,32 +59,29 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
         <div class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
             <div class="feature-icon"><i class="bi bi-card-checklist"></i></div>
-            <h3>Repair Tickets</h3>
+            <h3>Garment Orders</h3>
             <p class="text-muted-custom">
-              Create digital repair tickets with customer details, item notes,
-              photos, quotes, services, deadlines and repair status.
+              Create digital orders with customer details, garment notes, cleaning instructions, due dates and ticket status.
             </p>
           </div>
         </div>
 
         <div class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
-            <div class="feature-icon"><i class="bi bi-camera"></i></div>
-            <h3>Before & After Photos</h3>
+            <div class="feature-icon"><i class="bi bi-tags"></i></div>
+            <h3>Garment Tracking</h3>
             <p class="text-muted-custom">
-              Store condition photos, completion images and repair notes to
-              protect your workshop and build clear customer records.
+              Track garments by order, service type, customer, due date and collection status.
             </p>
           </div>
         </div>
 
         <div class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
-            <div class="feature-icon"><i class="bi bi-truck"></i></div>
-            <h3>Mail-In Repairs</h3>
+            <div class="feature-icon"><i class="bi bi-chat-dots"></i></div>
+            <h3>Pickup Updates</h3>
             <p class="text-muted-custom">
-              Manage postal and mail-in repairs with customer enquiries,
-              assessments, approvals, payments and return workflows.
+              Send automated SMS and email notifications when orders are ready or need customer approval.
             </p>
           </div>
         </div>
@@ -94,10 +89,9 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
         <div class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
             <div class="feature-icon"><i class="bi bi-box-seam"></i></div>
-            <h3>Inventory Tracking</h3>
+            <h3>Supplies & Inventory</h3>
             <p class="text-muted-custom">
-              Track soles, heels, dyes, zippers, straps, leather stock,
-              adhesives, hardware and workshop supplies.
+              Track packaging, tags, hangers, cleaning products and other dry cleaning supplies.
             </p>
           </div>
         </div>
@@ -107,8 +101,7 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
             <div class="feature-icon"><i class="bi bi-credit-card"></i></div>
             <h3>POS & Payments</h3>
             <p class="text-muted-custom">
-              Take deposits, process balances, generate invoices, issue receipts
-              and manage payments from the repair workflow.
+              Take payments, deposits, balances and issue receipts from the same customer order screen.
             </p>
           </div>
         </div>
@@ -116,10 +109,9 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
         <div class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
             <div class="feature-icon"><i class="bi bi-bar-chart"></i></div>
-            <h3>Reports & Productivity</h3>
+            <h3>Business Reports</h3>
             <p class="text-muted-custom">
-              Track sales, repair volume, staff productivity, service categories,
-              turnaround times and payment summaries.
+              Track order volume, sales, staff activity, service categories and payment summaries.
             </p>
           </div>
         </div>
@@ -135,23 +127,22 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
         <div class="row align-items-center g-5">
 
           <div class="col-lg-6">
-            <img src="/assets/images/items-services.png" class="img-fluid rounded-4" alt="Shoe repair software ticket screen">
+            <img src="/assets/images/items-services.png" class="img-fluid rounded-4" alt="Dry cleaning POS garment tracking screen">
           </div>
 
           <div class="col-lg-6">
-            <div class="eyebrow mb-3">Repair Job Management</div>
-            <h2 class="mb-4">Take control of every repair job.</h2>
+            <div class="eyebrow mb-3">Garment Order Management</div>
+            <h2 class="mb-4">Keep every order moving from intake to pickup.</h2>
             <p class="text-muted-custom mb-4">
-              Create tickets, assign jobs to staff, add internal notes, send
-              quotes for approval and update repair status from drop-off to pickup.
+              Create garment orders, add care notes, update job status, assign work and notify customers when items are ready for collection.
             </p>
 
             <ul class="check-list">
-              <li><i class="bi bi-check-circle"></i>Assign repairs to cobblers or staff</li>
-              <li><i class="bi bi-check-circle"></i>Track work orders and repair stages</li>
-              <li><i class="bi bi-check-circle"></i>Send SMS and email updates</li>
-              <li><i class="bi bi-check-circle"></i>Manage customer approvals</li>
-              <li><i class="bi bi-check-circle"></i>Keep full repair history</li>
+              <li><i class="bi bi-check-circle"></i>Track garments by customer and order status</li>
+              <li><i class="bi bi-check-circle"></i>Add cleaning instructions and service notes</li>
+              <li><i class="bi bi-check-circle"></i>Send SMS and email pickup reminders</li>
+              <li><i class="bi bi-check-circle"></i>Manage payments, deposits and receipts</li>
+              <li><i class="bi bi-check-circle"></i>Keep a searchable customer order history</li>
             </ul>
           </div>
 
@@ -164,10 +155,9 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
     <div class="container px-4 px-lg-5">
 
       <div class="section-title">
-        <h2>Designed for modern repair businesses</h2>
+        <h2>Designed for dry cleaners and garment care businesses</h2>
         <p>
-          Streamline customer communication, workshop organisation
-          and day-to-day repair operations from one connected system.
+          RepairPOS supports busy garment care shops that need fast intake, clear order tracking and reliable customer communication.
         </p>
       </div>
 
@@ -183,8 +173,7 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
             <h3>Customer Notifications</h3>
 
             <p class="text-muted-custom mb-0">
-              Send automated SMS and email updates when repairs are approved,
-              completed or ready for pickup.
+              Send SMS and email updates when jobs are approved, delayed, completed or ready for collection.
             </p>
 
           </div>
@@ -200,8 +189,7 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
             <h3>Repair Checklists</h3>
 
             <p class="text-muted-custom mb-0">
-              Standardise workshop procedures with pre-repair and post-repair
-              checklists attached to every job.
+              Keep staff consistent with digital checklists attached to each repair, service or work order.
             </p>
 
           </div>
@@ -214,11 +202,10 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
               <i class="bi bi-pencil-square"></i>
             </div>
 
-            <h3>Digital Signatures</h3>
+            <h3>Digital Approvals</h3>
 
             <p class="text-muted-custom mb-0">
-              Collect customer approvals and signatures digitally before
-              beginning custom or high-value repair work.
+              Record customer approvals, estimates and signed job details before beginning higher-value work.
             </p>
 
           </div>
@@ -231,11 +218,10 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
               <i class="bi bi-search"></i>
             </div>
 
-            <h3>Repair Tracking</h3>
+            <h3>Job Tracking</h3>
 
             <p class="text-muted-custom mb-0">
-              Allow customers to check repair status online using their
-              ticket number and contact details.
+              Search jobs quickly by customer details, ticket number, due date, service type or repair status.
             </p>
 
           </div>
@@ -255,14 +241,13 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
             <div class="eyebrow mb-3">Employee Management & Reporting</div>
             <h2 class="mb-4">Understand your workshop performance.</h2>
             <p class="text-muted-custom mb-4">
-              Monitor productivity, sales, repair categories and staff activity
-              so you can see what is happening across your repair business.
+              Monitor sales, garment order volume, staff activity, service mix and payment performance across your dry cleaning business.
             </p>
 
             <ul class="check-list">
               <li><i class="bi bi-check-circle"></i>Staff productivity reporting</li>
               <li><i class="bi bi-check-circle"></i>Sales and payment summaries</li>
-              <li><i class="bi bi-check-circle"></i>Repair category insights</li>
+              <li><i class="bi bi-check-circle"></i>Service category insights</li>
               <li><i class="bi bi-check-circle"></i>Role-based staff access</li>
               <li><i class="bi bi-check-circle"></i>Business activity dashboards</li>
             </ul>
@@ -276,6 +261,7 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
       </div>
     </div>
   </section>
+
   <section class="section-padding pt-0">
     <div class="container px-4 px-lg-5">
 
@@ -339,10 +325,9 @@ $pageDescription = "RepairPOS is modern repair shop software for shoe repair, ha
     <div class="container px-4 px-lg-5">
       <div class="cta-bar d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-4">
         <div>
-          <h2>Ready to modernise your repair workflow?</h2>
+          <h2>Ready to modernise your dry cleaning workflow?</h2>
           <p>
-            See how RepairPOS can help manage shoe repair, handbag restoration
-            and leather goods repair operations.
+            See how RepairPOS can help dry cleaners manage orders, garment tracking, payments and customer updates.
           </p>
         </div>
 

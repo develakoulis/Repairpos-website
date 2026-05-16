@@ -11283,7 +11283,7 @@ footer a:hover {
 /* PRICING PAGE */
 
 .pricing-page-title {
-  font-size: 3.4rem;
+  font-size: 3rem;
   line-height: 1.05;
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -11988,7 +11988,7 @@ footer a:hover {
   background: rgba(255,255,255,0.06);
 }
 
-/* Shoe Repair Software Page */
+/* HERO IMAGES INDUSTRY PAGES */
 .shoe-repair-contact-banner {
     position: relative;
     min-height: 680px;
@@ -12007,5 +12007,151 @@ footer a:hover {
         rgba(8, 8, 8, 0.58) 100%
       ),
       url('../assets/images/shoe-repair-software-hero.png')
+      72% center / cover no-repeat;
+}
+.bike-contact-banner {
+    position: relative;
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.96) 0%,
+        rgba(12, 12, 12, 0.82) 34%,
+        rgba(18, 18, 18, 0.28) 68%,
+        rgba(8, 8, 8, 0.58) 100%
+      ),
+      url('../assets/images/bike-repair-shop-software-hero.png')
+      72% center / cover no-repeat;
+}
+
+.mobile-phone-contact-banner {
+    position: relative;
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.96) 0%,
+        rgba(12, 12, 12, 0.82) 34%,
+        rgba(18, 18, 18, 0.28) 68%,
+        rgba(8, 8, 8, 0.58) 100%
+      ),
+      url('../assets/images/mobile-phone-repair-shop-hero.png')
+      72% center / cover no-repeat;
+}
+
+.dry-cleaning-contact-banner {
+    position: relative;
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.96) 0%,
+        rgba(12, 12, 12, 0.82) 34%,
+        rgba(18, 18, 18, 0.28) 68%,
+        rgba(8, 8, 8, 0.58) 100%
+      ),
+      url('../assets/images/dry-cleaning-pos-software-hero.png')
+      72% center / cover no-repeat;
+}
+
+.computer-contact-banner {
+    position: relative;
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.96) 0%,
+        rgba(12, 12, 12, 0.82) 34%,
+        rgba(18, 18, 18, 0.28) 68%,
+        rgba(8, 8, 8, 0.58) 100%
+      ),
+      url('../assets/images/computer-repair-shop-software-hero.png')
+      72% center / cover no-repeat;
+}
+
+.tailor-contact-banner {
+    position: relative;
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.96) 0%,
+        rgba(12, 12, 12, 0.82) 34%,
+        rgba(18, 18, 18, 0.28) 68%,
+        rgba(8, 8, 8, 0.58) 100%
+      ),
+      url('../assets/images/tailor-shop-software-hero.png')
+      72% center / cover no-repeat;
+}
+
+.jewellery-contact-banner {
+    position: relative;
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.96) 0%,
+        rgba(12, 12, 12, 0.82) 34%,
+        rgba(18, 18, 18, 0.28) 68%,
+        rgba(8, 8, 8, 0.58) 100%
+      ),
+      url('../assets/images/jewellery-repair-shop-software-hero.png')
+      72% center / cover no-repeat;
+}
+
+.watch-contact-banner {
+    position: relative;
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.96) 0%,
+        rgba(12, 12, 12, 0.82) 34%,
+        rgba(18, 18, 18, 0.28) 68%,
+        rgba(8, 8, 8, 0.58) 100%
+      ),
+      url('../assets/images/watch-repair-shop-hero.png')
       72% center / cover no-repeat;
 }

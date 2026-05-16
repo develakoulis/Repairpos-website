@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "RepairPOS | POS Software for Repair Shops";
-$pageDescription = "RepairPOS is point of sale and job management software for repair shops. Manage jobs, customers, invoices, photos, payments and notifications in one simple system.";
+$pageDescription = "RepairPOS is a cloud based point of sale and job management software for repair shops. Manage jobs, customers, invoices, photos, payments and notifications in one simple system.";
 ?>
 
 <!DOCTYPE html>
