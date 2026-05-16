@@ -174,7 +174,6 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
 
   </div>
 </section>
-
 <section class="section-padding" id="industries">
   <div class="container px-4 px-lg-5">
     <div class="section-title">
@@ -190,78 +189,131 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
 
       <div class="col-md-6 col-lg-4">
         <div class="industry-card">
-          <img src="assets/images/dry-clean.png" alt="Dry cleaning garments">
+          <a href="dry-cleaning-pos-software">
+            <img src="assets/images/dry-clean.png" alt="Dry cleaning garments">
+          </a>
+
           <div class="industry-content">
             <div class="industry-title">
               <div class="line-icon"><i class="bi bi-basket3"></i></div>
-              <h3>Dry Cleaning</h3>
+              <h3>
+                <a href="dry-cleaning-pos-software">Dry Cleaning</a>
+              </h3>
             </div>
-            <p>Manage garment intake, customer notifications, payments and collection status.</p>
+
+            <p>
+              Manage garment intake, customer notifications, payments and collection status.
+            </p>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
         <div class="industry-card">
-        <a href="shoe-repair-software">  <img src="assets/images/shoe-repair.png" alt="Shoe repair workbench"></a>
+
+          <a href="shoe-repair-shop-software">
+            <img src="assets/images/shoe-repair.png" alt="Shoe repair workbench">
+          </a>
+
           <div class="industry-content">
             <div class="industry-title">
               <div class="line-icon"><i class="bi bi-hammer"></i></div>
-              <h3><a href="shoe-repair-software">Shoe Repair</a></h3>
+              <h3>
+                <a href="shoe-repair-shop-software">Shoe Repair</a>
+              </h3>
             </div>
-            <p>Track resoles, heel work, polishing, pickups and customer history.</p>
+
+            <p>
+              Track resoles, heel work, polishing, pickups and customer history.
+            </p>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
         <div class="industry-card">
-          <img src="assets/images/tailor.png" alt="Tailoring studio">
+
+          <a href="tailor-shop-software">
+            <img src="assets/images/tailor.png" alt="Tailoring studio">
+          </a>
+
           <div class="industry-content">
             <div class="industry-title">
               <div class="line-icon"><i class="bi bi-scissors"></i></div>
-              <h3>Tailoring</h3>
+              <h3>
+                <a href="tailor-shop-software">Tailoring</a>
+              </h3>
             </div>
-            <p>Record measurements, alterations, fitting notes, deadlines and orders.</p>
+
+            <p>
+              Record measurements, alterations, fitting notes, deadlines and orders.
+            </p>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
         <div class="industry-card">
-          <img src="assets/images/bag-repair.png" alt="Bag and leather repair workbench">
+
+          <a href="jewellery-repair-shop-software">
+            <img src="assets/images/jewellery-repair-shop-software-hero.png" alt="Jewellery repair workbench">
+          </a>
+
           <div class="industry-content">
             <div class="industry-title">
-              <div class="line-icon"><i class="bi bi-briefcase"></i></div>
-              <h3>Bag & Leather Repair</h3>
+              <div class="line-icon"><i class="bi bi-gem"></i></div>
+              <h3>
+                <a href="jewellery-repair-shop-software">Jewellery Repair</a>
+              </h3>
             </div>
-            <p>Handle photos, quotes, restoration notes, approvals and customer communication.</p>
+
+            <p>
+              Manage repairs, stone replacements, polishing, customer approvals and job tracking.
+            </p>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
         <div class="industry-card">
-          <img src="assets/images/computer-repair.png" alt="Computer repair workbench">
+
+          <a href="computer-repair-shop-software">
+            <img src="assets/images/computer-repair.png" alt="Computer repair workbench">
+          </a>
+
           <div class="industry-content">
             <div class="industry-title">
               <div class="line-icon"><i class="bi bi-pc-display"></i></div>
-              <h3>Computer Repair</h3>
+              <h3>
+                <a href="computer-repair-shop-software">Computer Repair</a>
+              </h3>
             </div>
-            <p>Track diagnostics, parts, repairs, deposits, approvals and completed jobs.</p>
+
+            <p>
+              Track diagnostics, parts, repairs, deposits, approvals and completed jobs.
+            </p>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
         <div class="industry-card">
-          <img src="assets/images/iphone-repair.png" alt="iPhone repair bench">
+
+          <a href="mobile-phone-repair-shop-software">
+            <img src="assets/images/iphone-repair.png" alt="iPhone repair bench">
+          </a>
+
           <div class="industry-content">
             <div class="industry-title">
               <div class="line-icon"><i class="bi bi-phone"></i></div>
-              <h3>iPhone Repair</h3>
+              <h3>
+                <a href="mobile-phone-repair-shop-software">iPhone Repair</a>
+              </h3>
             </div>
-            <p>Manage screen repairs, batteries, device notes, quotes and fast pickups.</p>
+
+            <p>
+              Manage screen repairs, batteries, device notes, quotes and fast pickups.
+            </p>
           </div>
         </div>
       </div>
