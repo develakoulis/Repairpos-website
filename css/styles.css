@@ -10946,7 +10946,7 @@ footer a,
       rgba(18,18,18,0.28) 68%,
       rgba(8,8,8,0.58) 100%
     ),
-    url("../assets/images/hero.png") center right / cover no-repeat;
+    url("../assets/images/shoe-repair-software-hero.png") center right / cover no-repeat;
 }
 
 .hero::after {
