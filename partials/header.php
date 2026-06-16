@@ -91,6 +91,12 @@
         </li>
 
         <li class="nav-item">
+          <a class="nav-link" href="case-study.php">
+            Case Studies
+          </a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link" href="pricing.php">
             Pricing
           </a>
