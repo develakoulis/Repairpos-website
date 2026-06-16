@@ -7,6 +7,7 @@ deployment:
     - /bin/cp -R css $DEPLOYPATH/
     - /bin/cp -R js $DEPLOYPATH/
     - /bin/cp -R partials $DEPLOYPATH/
+    - /bin/cp -R case-studies $DEPLOYPATH/
 
     - /bin/cp *.php $DEPLOYPATH/
     - /bin/cp *.html $DEPLOYPATH/
