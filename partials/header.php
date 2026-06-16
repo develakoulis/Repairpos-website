@@ -48,7 +48,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/case-studies/index.php">
+          <a class="nav-link" href="/case-studies/">
             Case Studies
           </a>
         </li>
