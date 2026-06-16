@@ -1,3 +1,4 @@
+
 <?php
 $pageTitle = "RepairPOS Case Studies | Real Repair Businesses Using RepairPOS";
 $pageDescription = "See how real repair businesses use RepairPOS to manage repairs, customers, quotes, payments, photos and workshop workflow.";
@@ -6,11 +7,11 @@ $pageDescription = "See how real repair businesses use RepairPOS to manage repai
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'partials/head.php'; ?>
+<?php include dirname(__DIR__) . '/partials/head.php'; ?>
 
 <body class="d-flex flex-column">
 
-<?php include 'partials/header.php'; ?>
+  <?php include dirname(__DIR__) . '/partials/header.php'; ?>
 
 <style>
   .cases-page {
@@ -127,9 +128,9 @@ $pageDescription = "See how real repair businesses use RepairPOS to manage repai
 
           <div class="industry-card case-card">
 
-            <a href="evans-case-study">
+            <a href="/case-studies/evans-shoe-bag-repair">
               <img
-                src="assets/images/evans-shoe-repair-case-study-hero.png"
+                src="/assets/images/evans-shoe-repair-case-study-hero.png"
                 alt="Evans Leather Restoration RepairPOS case study">
             </a>
 
@@ -155,8 +156,8 @@ $pageDescription = "See how real repair businesses use RepairPOS to manage repai
                 <span class="badge">Leather Repairs</span>
               </div>
 
-              <a class="btn btn-primary" href="evans-case-study">
-                Learn More
+<a href="/case-studies/evans-shoe-bag-repair">
+                  Learn More
               </a>
 
             </div>
@@ -211,7 +212,7 @@ $pageDescription = "See how real repair businesses use RepairPOS to manage repai
 
 </main>
 
-<?php include 'partials/footer.php'; ?>
+<?php include dirname(__DIR__) . '/partials/footer.php'; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 

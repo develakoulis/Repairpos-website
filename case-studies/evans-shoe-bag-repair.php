@@ -6,12 +6,11 @@ $pageDescription = "How Evans uses RepairPOS to manage shoe repairs, leather res
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'partials/head.php'; ?>
+<?php include dirname(__DIR__) . '/partials/head.php'; ?>
 
 <body class="d-flex flex-column">
 
-<?php include 'partials/header.php'; ?>
-
+<?php include dirname(__DIR__) . '/partials/header.php'; ?>
 
 <main class="flex-shrink-0">
 
@@ -30,11 +29,12 @@ $pageDescription = "How Evans uses RepairPOS to manage shoe repairs, leather res
               </div>
 
               <h1>
-            How Evans Uses RepairPOS to Run a High-Volume Shoe & Bag Repair Business
+                How Evans Uses RepairPOS to Run a Shoe &amp; Bag Repair Business
               </h1>
 
               <p>
-          Established in 1956, Evans is an institution in Melbourne CBD, Australia handling thousands of shoe repair and bag restorations every year. Here's why a traditional POS system wasn't enough and how RepairPOS became the centre of the workshop workflow.              </p>
+                Established in 1956, Evans is an institution in Melbourne CBD, Australia handling thousands of shoe repair and bag restorations every year. Here's why a traditional POS system wasn't enough and how RepairPOS became the centre of the workshop workflow.
+              </p>
 
               <div class="d-flex flex-wrap gap-2">
                 <span class="badge">Shoe Repair Software</span>
@@ -48,11 +48,11 @@ $pageDescription = "How Evans uses RepairPOS to manage shoe repairs, leather res
 
             <figure class="mb-4">
               <img class="img-fluid rounded"
-                   src="assets/images/evans-shoe-repair-case-study-hero.png"
+                   src="/assets/images/evans-shoe-repair-case-study-hero.png"
                    alt="Evans Leather Restoration using RepairPOS software">
             </figure>
 
-<section class="case-study-content mb-5">
+            <section class="case-study-content mb-5">
 
               <p class="fs-5 mb-4">
                 Evans is a high-volume shoe repair and leather restoration business handling customer repairs,
@@ -161,7 +161,7 @@ $pageDescription = "How Evans uses RepairPOS to manage shoe repairs, leather res
           </div>
 
           <div class="col-lg-4 text-lg-end">
-            <a class="btn btn-primary btn-lg" href="contact">
+            <a class="btn btn-primary btn-lg" href="/contact">
               Book a Demo
             </a>
           </div>
@@ -175,7 +175,7 @@ $pageDescription = "How Evans uses RepairPOS to manage shoe repairs, leather res
 
 </main>
 
-<?php include 'partials/footer.php'; ?>
+<?php include dirname(__DIR__) . '/partials/footer.php'; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
