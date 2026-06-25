@@ -67,7 +67,7 @@
 
         <li class="nav-item">
           <a class="nav-link" href="/contact">
-            Contac
+            Contact
           </a>
         </li>
 
