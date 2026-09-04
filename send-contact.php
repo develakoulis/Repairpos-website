@@ -1,11 +1,60 @@
 <?php
 
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require_once 'pos/PHPMailer/PHPMailer.php';
-require_once 'pos/PHPMailer/SMTP.php';
-require_once 'pos/PHPMailer/Exception.php';
+/* ===== DEBUG / ERROR LOGGING ===== */
+
+error_reporting(E_ALL);
+ini_set('display_errors', '0');
+ini_set('log_errors', '1');
+ini_set('error_log', __DIR__ . '/php-error-log.txt');
+
+$logFile = __DIR__ . '/mail-error-log.txt';
+$smtpLogFile = __DIR__ . '/smtp-debug-log.txt';
+
+/* Force the files to be created */
+file_put_contents(
+    $logFile,
+    date('Y-m-d H:i:s') . " - send-contact.php reached\n",
+    FILE_APPEND
+);
+
+file_put_contents(
+    $smtpLogFile,
+    date('Y-m-d H:i:s') . " - SMTP log initialised\n",
+    FILE_APPEND
+);
+
+/* Catch fatal PHP errors too */
+register_shutdown_function(function () {
+    $error = error_get_last();
+
+    if ($error !== null) {
+        file_put_contents(
+            __DIR__ . '/php-error-log.txt',
+            date('Y-m-d H:i:s') . ' - FATAL: ' . print_r($error, true) . PHP_EOL,
+            FILE_APPEND
+        );
+    }
+});
+
+/* ===== LOAD PHPMAILER ===== */
+
+require_once __DIR__ . '/pos/PHPMailer/PHPMailer.php';
+require_once __DIR__ . '/pos/PHPMailer/SMTP.php';
+require_once __DIR__ . '/pos/PHPMailer/Exception.php';
+
+function repairpos_log($message) {
+    global $logFile;
+
+    file_put_contents(
+        $logFile,
+        date('Y-m-d H:i:s') . ' - ' . $message . PHP_EOL,
+        FILE_APPEND
+    );
+}
 
 $logFile = __DIR__ . '/mail-error-log.txt';
 $smtpLogFile = __DIR__ . '/smtp-debug-log.txt';
