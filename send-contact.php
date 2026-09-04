@@ -1,10 +1,8 @@
 <?php
 
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-/* ===== DEBUG / ERROR LOGGING ===== */
 
 error_reporting(E_ALL);
 ini_set('display_errors', '0');
@@ -40,11 +38,10 @@ register_shutdown_function(function () {
     }
 });
 
-/* ===== LOAD PHPMAILER ===== */
 
-require_once __DIR__ . '/pos/PHPMailer/PHPMailer.php';
-require_once __DIR__ . '/pos/PHPMailer/SMTP.php';
-require_once __DIR__ . '/pos/PHPMailer/Exception.php';
+require_once 'pos/PHPMailer/PHPMailer.php';
+require_once 'pos/PHPMailer/SMTP.php';
+require_once 'pos/PHPMailer/Exception.php';
 
 function repairpos_log($message) {
     global $logFile;
