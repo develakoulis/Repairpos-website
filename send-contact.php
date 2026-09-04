@@ -7,9 +7,6 @@ require_once 'pos/PHPMailer/PHPMailer.php';
 require_once 'pos/PHPMailer/SMTP.php';
 require_once 'pos/PHPMailer/Exception.php';
 
-error_log('RepairPOS send-contact.php reached');
-
-
 $logFile = __DIR__ . '/mail-error-log.txt';
 $smtpLogFile = __DIR__ . '/smtp-debug-log.txt';
 
@@ -87,25 +84,18 @@ try {
 
     repairpos_log('Attempting send.');
 
-    error_log('RepairPOS: about to send email');
-
     $mail->send();
-
-    error_log('RepairPOS: PHPMailer send returned successfully');
 
     repairpos_log('Mail sent successfully.');
 
     header("Location: /contact?success=1");
     exit;
 
-  } catch (Exception $e) {
+} catch (Exception $e) {
 
-      error_log('RepairPOS PHPMailer ERROR: ' . $e->getMessage());
-      error_log('RepairPOS PHPMailer ErrorInfo: ' . $mail->ErrorInfo);
+    repairpos_log('PHPMailer exception: ' . $e->getMessage());
+    repairpos_log('PHPMailer ErrorInfo: ' . $mail->ErrorInfo);
 
-      repairpos_log('PHPMailer exception: ' . $e->getMessage());
-      repairpos_log('PHPMailer ErrorInfo: ' . $mail->ErrorInfo);
-
-      header("Location: /contact?error=mail");
-      exit;
-  }
+    header("Location: /contact?error=mail");
+    exit;
+}
