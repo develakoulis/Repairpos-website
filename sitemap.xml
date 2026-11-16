@@ -24,6 +24,16 @@
     <loc>https://repairpos.co/contact</loc>
   </url>
 
+  <!-- Case Studies -->
+
+  <url>
+    <loc>https://repairpos.co/case-studies/</loc>
+  </url>
+
+  <url>
+    <loc>https://repairpos.co/case-studies/evans-shoe-bag-repair</loc>
+  </url>
+
   <!-- User Guides -->
 
   <url>
@@ -82,38 +92,42 @@
 
   <url>
     <loc>https://repairpos.co/shoe-repair-shop-software</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
 
   <url>
     <loc>https://repairpos.co/watch-repair-shop-software</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
 
   <url>
     <loc>https://repairpos.co/jewellery-repair-shop-software</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
 
   <url>
     <loc>https://repairpos.co/tailor-shop-software</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
 
   <url>
     <loc>https://repairpos.co/dry-cleaning-pos-software</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
 
   <url>
     <loc>https://repairpos.co/bike-repair-shop-software</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
 
   <url>
     <loc>https://repairpos.co/mobile-phone-repair-shop-software</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
 
   <url>
     <loc>https://repairpos.co/computer-repair-shop-software</loc>
-  </url>
-
-  <url>
-    <loc>https://repairpos.co/leather-repair-shop-software</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
 
 </urlset>

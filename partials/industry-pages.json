@@ -1,0 +1,586 @@
+{
+  "shoe": {
+    "id": "shoe",
+    "file": "shoe-repair-shop-software",
+    "name": "Shoe repair",
+    "audience": "cobblers and shoe repair shops",
+    "noun": "pair",
+    "plural": "pairs",
+    "headline": "Every pair tracked, from counter to collection.",
+    "intro": "Book in shoes, boots and leather repairs with the work, photos and due date attached to each item.",
+    "items": [
+      [
+        "Black leather heels",
+        "Sole replacement",
+        "Ready Shelf",
+        "Replace worn soles. Match the original finish."
+      ],
+      [
+        "Tan leather boots",
+        "Heel replacement",
+        "Shoe Workshop",
+        "Replace both heel blocks and check the finish."
+      ]
+    ],
+    "part": "Replacement sole sheet",
+    "pain": "A customer leaves two pairs. One is ready; the other still needs work.",
+    "answer": "See the status and location of each pair without treating the whole order as one repair.",
+    "details": [
+      "Keep soles, heels, stitching and polishing with the correct pair.",
+      "Record wear and existing damage with item photos.",
+      "Find the finished pair’s shelf location at collection."
+    ],
+    "steps": [
+      {
+        "title": "Book in",
+        "text": "Find the customer, add each pair separately and set the promised finish date.",
+        "link": "book-in"
+      },
+      {
+        "title": "Quote & take payment",
+        "text": "Add sole, heel or stitching services to the right pair. Agree the price and take a deposit if needed.",
+        "link": "quotes-and-payments"
+      },
+      {
+        "title": "Assign the work",
+        "text": "Assign the work, add replacement soles or heels and keep repair instructions with each pair.",
+        "link": "staff-and-workshop"
+      },
+      {
+        "title": "Track each item",
+        "text": "Update each pair’s status and location as it moves through the workshop.",
+        "link": "item-tracking"
+      },
+      {
+        "title": "Ready for collection",
+        "text": "Check the finished work, add completion photos and send a collection update.",
+        "link": "complete-repairs"
+      },
+      {
+        "title": "Collect & finalise",
+        "text": "Find the pairs, take the remaining balance, provide a receipt and finalise the order.",
+        "link": "collection-and-finalisation"
+      }
+    ],
+    "tools": [
+      "Record worn soles, scuffs and the agreed finish before work starts.",
+      "Add soles, heel blocks and other repair parts alongside labour.",
+      "Keep instructions for each pair with the staff member doing the work."
+    ],
+    "title": "Shoe Repair POS Software for Cobblers | RepairPOS",
+    "hero": "shoe-repair-contact-banner shoe-repair-hero",
+    "image": "industry-shoe.webp",
+    "description": "RepairPOS for cobblers and shoe repair shops. Track individual pairs, repair notes, photos, parts, due dates, deposits and collection."
+  },
+  "bike": {
+    "id": "bike",
+    "file": "bike-repair-shop-software",
+    "name": "Bike repair",
+    "audience": "bike shops and bicycle workshops",
+    "noun": "bike",
+    "plural": "bikes",
+    "headline": "Keep every bike and every job in view.",
+    "intro": "Bring service notes, replacement parts, workshop progress and payments together for every bicycle you book in.",
+    "items": [
+      [
+        "Blue commuter bike",
+        "Brake adjustment",
+        "Collection Bay",
+        "Adjust cable tension and test front and rear brakes."
+      ],
+      [
+        "Red mountain bike",
+        "Drivetrain service",
+        "Bike Workshop",
+        "Inspect chain wear and adjust shifting under load."
+      ]
+    ],
+    "part": "Brake cable",
+    "pain": "Two bikes arrive together, but their service jobs finish at different times.",
+    "answer": "Track the work and location of each bike, even when both belong to the same customer order.",
+    "details": [
+      "Record the model, condition and reported fault in the item details and notes.",
+      "Keep parts and labour attached to the bike they belong to.",
+      "See which bike is ready and where it is waiting."
+    ],
+    "steps": [
+      {
+        "title": "Book in",
+        "text": "Search for the customer, add each bike and record its condition, fault and required finish date.",
+        "link": "book-in"
+      },
+      {
+        "title": "Quote & take payment",
+        "text": "Add the agreed service and repair work. Review parts, labour and any deposit with the customer.",
+        "link": "quotes-and-payments"
+      },
+      {
+        "title": "Assign the work",
+        "text": "Assign the job and add cables, brake pads or other parts to the correct bike.",
+        "link": "staff-and-workshop"
+      },
+      {
+        "title": "Track each item",
+        "text": "Keep workshop status and location up to date for each bike.",
+        "link": "item-tracking"
+      },
+      {
+        "title": "Ready for collection",
+        "text": "Record test results in the notes, add completion photos and notify the customer when ready.",
+        "link": "complete-repairs"
+      },
+      {
+        "title": "Collect & finalise",
+        "text": "Locate the bike, settle the balance, give the customer a receipt and finalise the order.",
+        "link": "collection-and-finalisation"
+      }
+    ],
+    "tools": [
+      "Keep reported faults and the agreed service scope with the bike.",
+      "Add brake pads, cables and other parts alongside service charges.",
+      "Assign repair work and keep test notes with the job."
+    ],
+    "title": "Bike Repair Shop Software & Workshop POS | RepairPOS",
+    "hero": "bike-contact-banner bike-hero",
+    "image": "industry-bike.webp",
+    "description": "RepairPOS for bike shops and bicycle workshops. Track individual bikes, repair notes, photos, parts, due dates, deposits and collection."
+  },
+  "computer": {
+    "id": "computer",
+    "file": "computer-repair-shop-software",
+    "name": "Computer repair",
+    "audience": "computer repair shops and IT workshops",
+    "noun": "computer",
+    "plural": "computers",
+    "headline": "Keep the device, diagnosis and repair together.",
+    "intro": "Track laptops and desktops individually, with fault notes, agreed work, parts and payments on the same order.",
+    "items": [
+      [
+        "Silver laptop",
+        "Keyboard replacement",
+        "Collection Shelf",
+        "Replace damaged keyboard and test every key."
+      ],
+      [
+        "Desktop computer",
+        "Diagnostic inspection",
+        "Diagnostics Bench",
+        "Investigate unexpected shutdowns and record test results."
+      ]
+    ],
+    "part": "Replacement keyboard",
+    "pain": "A laptop is ready while a desktop on the same order still needs diagnosis.",
+    "answer": "Give each device its own progress, service instructions and workshop location.",
+    "details": [
+      "Record the model, identifying details and reported fault in item notes.",
+      "Photograph the case condition and note accessories left with you.",
+      "Keep diagnostic findings and replacement parts with the correct device."
+    ],
+    "steps": [
+      {
+        "title": "Book in",
+        "text": "Find the customer and add each device. Note identifying details, accessories, condition and finish date.",
+        "link": "book-in"
+      },
+      {
+        "title": "Quote & take payment",
+        "text": "Add diagnostic or repair services and record the agreed scope. Take a deposit when required.",
+        "link": "quotes-and-payments"
+      },
+      {
+        "title": "Assign the work",
+        "text": "Assign the work, record diagnostic findings and add replacement parts to that device.",
+        "link": "staff-and-workshop"
+      },
+      {
+        "title": "Track each item",
+        "text": "Update each device’s status and bench or storage location as work progresses.",
+        "link": "item-tracking"
+      },
+      {
+        "title": "Ready for collection",
+        "text": "Record the repair checks and finished condition, then send a ready-for-collection update.",
+        "link": "complete-repairs"
+      },
+      {
+        "title": "Collect & finalise",
+        "text": "Return the device and recorded accessories, collect the balance and finalise the order with a receipt.",
+        "link": "collection-and-finalisation"
+      }
+    ],
+    "tools": [
+      "Record casing condition and accessories with intake photos and notes.",
+      "Keep keyboards, drives and other replacement parts with the correct device.",
+      "Leave diagnostic findings and repair instructions for the assigned technician."
+    ],
+    "title": "Computer Repair Shop Software & POS | RepairPOS",
+    "hero": "computer-contact-banner computer-hero",
+    "image": "industry-computer.webp",
+    "description": "RepairPOS for computer repair shops and IT workshops. Track individual computers, repair notes, photos, parts, due dates, deposits and collection."
+  },
+  "phone": {
+    "id": "phone",
+    "file": "mobile-phone-repair-shop-software",
+    "name": "Mobile phone repair",
+    "audience": "phone repair shops and device repair businesses",
+    "noun": "phone",
+    "plural": "phones",
+    "headline": "Track every phone beyond the payment.",
+    "intro": "Keep each device’s fault, photos, repair services and replacement parts together, from intake to handover.",
+    "items": [
+      [
+        "Black smartphone",
+        "Screen replacement",
+        "Collection Drawer",
+        "Replace cracked display and test touch response."
+      ],
+      [
+        "Blue smartphone",
+        "Battery replacement",
+        "Repair Bench",
+        "Replace battery and check charging after repair."
+      ]
+    ],
+    "part": "Replacement display",
+    "pain": "One phone is ready while another is still on the repair bench.",
+    "answer": "See the status, location and work for each device, instead of relying on a single order status.",
+    "details": [
+      "Record model and identifying details such as IMEI in item notes.",
+      "Photograph existing damage before starting the repair.",
+      "Attach screens, batteries and service charges to the correct phone."
+    ],
+    "steps": [
+      {
+        "title": "Book in",
+        "text": "Search for the customer and add each phone with model, identifying details, damage and required finish date.",
+        "link": "book-in"
+      },
+      {
+        "title": "Quote & take payment",
+        "text": "Add the screen, battery or diagnostic service. Confirm the price and record any deposit.",
+        "link": "quotes-and-payments"
+      },
+      {
+        "title": "Assign the work",
+        "text": "Assign the repair and add the correct replacement screen, battery or other part.",
+        "link": "staff-and-workshop"
+      },
+      {
+        "title": "Track each item",
+        "text": "Keep each phone’s repair status and bench or drawer location current.",
+        "link": "item-tracking"
+      },
+      {
+        "title": "Ready for collection",
+        "text": "Record touch, charging or other repair checks in the notes and notify the customer when ready.",
+        "link": "complete-repairs"
+      },
+      {
+        "title": "Collect & finalise",
+        "text": "Find the right device, take the final balance, provide a receipt and finalise the order.",
+        "link": "collection-and-finalisation"
+      }
+    ],
+    "tools": [
+      "Record cracks and existing wear with photos tied to the phone.",
+      "Add screens, batteries and other replacement parts alongside labour.",
+      "Keep test results and repair instructions with the technician’s work."
+    ],
+    "title": "Mobile Phone Repair Shop Software & POS | RepairPOS",
+    "hero": "mobile-phone-contact-banner mobile-phone-hero",
+    "image": "industry-phone.webp",
+    "description": "RepairPOS for phone repair shops and device repair businesses. Track individual phones, repair notes, photos, parts, due dates, deposits and collection."
+  },
+  "watch": {
+    "id": "watch",
+    "file": "watch-repair-shop-software",
+    "name": "Watch repair",
+    "audience": "watchmakers and watch repair workshops",
+    "noun": "watch",
+    "plural": "watches",
+    "headline": "Keep every watch and its service history together.",
+    "intro": "Track battery changes, strap work and servicing with item photos, workshop notes, due dates and payments.",
+    "items": [
+      [
+        "Silver bracelet watch",
+        "Battery replacement",
+        "Collection Drawer",
+        "Replace battery and check operation."
+      ],
+      [
+        "Brown strap watch",
+        "Strap replacement",
+        "Watch Bench",
+        "Fit agreed leather strap and check spring bars."
+      ]
+    ],
+    "part": "Watch battery",
+    "pain": "A battery change is complete while another watch still needs strap work.",
+    "answer": "Keep a separate status and location for each watch on the customer’s order.",
+    "details": [
+      "Record the brand, identifying details and visible wear in item notes.",
+      "Keep battery, strap and servicing work with the correct watch.",
+      "Find the right drawer when the customer returns."
+    ],
+    "steps": [
+      {
+        "title": "Book in",
+        "text": "Find the customer and add each watch. Record identifying details, visible condition and required finish date.",
+        "link": "book-in"
+      },
+      {
+        "title": "Quote & take payment",
+        "text": "Add the agreed battery, strap or servicing work. Review the estimate and take a deposit if needed.",
+        "link": "quotes-and-payments"
+      },
+      {
+        "title": "Assign the work",
+        "text": "Assign the service, add batteries or straps and record workshop instructions.",
+        "link": "staff-and-workshop"
+      },
+      {
+        "title": "Track each item",
+        "text": "Update the status and bench or drawer location of each watch.",
+        "link": "item-tracking"
+      },
+      {
+        "title": "Ready for collection",
+        "text": "Record the completed work and checks, add photos and let the customer know it is ready.",
+        "link": "complete-repairs"
+      },
+      {
+        "title": "Collect & finalise",
+        "text": "Locate the watch, settle the remaining balance and finalise the order with a receipt.",
+        "link": "collection-and-finalisation"
+      }
+    ],
+    "tools": [
+      "Keep intake photos and visible wear with the individual watch.",
+      "Add batteries, straps and other parts to the service being carried out.",
+      "Record servicing findings and checks in the assigned worker’s notes."
+    ],
+    "title": "Watch Repair Shop Software & POS | RepairPOS",
+    "hero": "watch-contact-banner watch-hero",
+    "image": "industry-watch.webp",
+    "description": "RepairPOS for watchmakers and watch repair workshops. Track individual watches, repair notes, photos, parts, due dates, deposits and collection."
+  },
+  "jewellery": {
+    "id": "jewellery",
+    "file": "jewellery-repair-shop-software",
+    "name": "Jewellery repair",
+    "audience": "jewellers and jewellery repair workshops",
+    "noun": "piece",
+    "plural": "pieces",
+    "headline": "Every piece deserves its own repair record.",
+    "intro": "Keep rings, chains and bracelets individually tracked, with condition photos, agreed work and workshop progress.",
+    "items": [
+      [
+        "Yellow gold ring",
+        "Ring resizing",
+        "Collection Drawer",
+        "Resize to the agreed size recorded in the item notes."
+      ],
+      [
+        "Silver chain",
+        "Clasp replacement",
+        "Jewellery Bench",
+        "Fit agreed replacement clasp and inspect attachment."
+      ]
+    ],
+    "part": "Replacement clasp",
+    "pain": "A ring is ready, but a chain on the same order is still being repaired.",
+    "answer": "See each piece’s progress and storage location, with its own notes and repair services.",
+    "details": [
+      "Record metal, identifying details and visible condition in item notes.",
+      "Photograph each piece before work begins.",
+      "Keep sizing instructions and replacement findings with the correct piece."
+    ],
+    "steps": [
+      {
+        "title": "Book in",
+        "text": "Find the customer and add each piece separately. Note identifying details, condition and required finish date.",
+        "link": "book-in"
+      },
+      {
+        "title": "Quote & take payment",
+        "text": "Add resizing, clasp or other repair services and record the agreed instructions, price and deposit.",
+        "link": "quotes-and-payments"
+      },
+      {
+        "title": "Assign the work",
+        "text": "Assign the work and add replacement clasps or other parts to the correct piece.",
+        "link": "staff-and-workshop"
+      },
+      {
+        "title": "Track each item",
+        "text": "Update each piece’s repair status and bench or storage location.",
+        "link": "item-tracking"
+      },
+      {
+        "title": "Ready for collection",
+        "text": "Record the completed work, add finish photos and notify the customer when ready.",
+        "link": "complete-repairs"
+      },
+      {
+        "title": "Collect & finalise",
+        "text": "Locate and hand over the correct pieces, collect the balance and finalise the order with a receipt.",
+        "link": "collection-and-finalisation"
+      }
+    ],
+    "tools": [
+      "Keep condition photos attached to the ring, chain or bracelet they show.",
+      "Add clasps and other replacement findings alongside repair services.",
+      "Keep agreed sizing and finishing instructions with the assigned worker."
+    ],
+    "title": "Jewellery Repair Shop Software & POS | RepairPOS",
+    "hero": "jewellery-contact-banner jewellery-hero",
+    "image": "industry-jewellery.webp",
+    "description": "RepairPOS for jewellers and jewellery repair workshops. Track individual pieces, repair notes, photos, parts, due dates, deposits and collection."
+  },
+  "tailor": {
+    "id": "tailor",
+    "file": "tailor-shop-software",
+    "name": "Tailoring & alterations",
+    "audience": "tailors and alteration shops",
+    "noun": "garment",
+    "plural": "garments",
+    "headline": "Keep every garment and alteration on track.",
+    "intro": "Bring garment details, fitting notes, alteration instructions, due dates and payments into one clear workflow.",
+    "items": [
+      [
+        "Navy suit trousers",
+        "Shorten hem",
+        "Collection Rail",
+        "Shorten to the agreed finished length recorded in notes."
+      ],
+      [
+        "Black evening dress",
+        "Zip replacement",
+        "Alterations Bench",
+        "Replace zip and preserve the original finish."
+      ]
+    ],
+    "part": "Replacement zip",
+    "pain": "The trousers are finished, but the dress on the same order still needs a new zip.",
+    "answer": "Track each garment separately so staff can see what is ready and what still needs work.",
+    "details": [
+      "Keep measurements and fitting instructions in each garment’s notes.",
+      "Record condition and alteration details with item photos.",
+      "Find the correct rail or workshop location at collection."
+    ],
+    "steps": [
+      {
+        "title": "Book in",
+        "text": "Search for the customer and add each garment. Record condition, fitting notes and the agreed finish date.",
+        "link": "book-in"
+      },
+      {
+        "title": "Quote & take payment",
+        "text": "Add hems, resizing or zip work to the correct garment. Confirm the price and record any deposit.",
+        "link": "quotes-and-payments"
+      },
+      {
+        "title": "Assign the work",
+        "text": "Assign the alterations, add zips or other materials and keep measurements in the item notes.",
+        "link": "staff-and-workshop"
+      },
+      {
+        "title": "Track each item",
+        "text": "Update each garment’s status and bench or rail location as work progresses.",
+        "link": "item-tracking"
+      },
+      {
+        "title": "Ready for collection",
+        "text": "Check the finished alterations, record any final notes and send a collection update.",
+        "link": "complete-repairs"
+      },
+      {
+        "title": "Collect & finalise",
+        "text": "Find the garments, take the remaining balance and finalise the order with a receipt.",
+        "link": "collection-and-finalisation"
+      }
+    ],
+    "tools": [
+      "Keep measurements, fitting notes and condition photos with each garment.",
+      "Add zips, buttons and other materials alongside alteration services.",
+      "Give the assigned worker the agreed length, fit and finishing instructions."
+    ],
+    "title": "Tailor Shop Software for Alterations & Fittings | RepairPOS",
+    "hero": "tailor-contact-banner tailor-hero",
+    "image": "industry-tailor.webp",
+    "description": "RepairPOS for tailors and alteration shops. Track individual garments, repair notes, photos, parts, due dates, deposits and collection."
+  },
+  "dry-cleaning": {
+    "id": "dry-cleaning",
+    "file": "dry-cleaning-pos-software",
+    "name": "Dry cleaning",
+    "audience": "dry cleaners and garment care shops",
+    "noun": "garment",
+    "plural": "garments",
+    "headline": "Track each garment, from drop-off to pickup.",
+    "intro": "Keep cleaning instructions, garment condition, due dates, item progress and payments together for every customer.",
+    "items": [
+      [
+        "Charcoal wool coat",
+        "Dry clean and press",
+        "Collection Rail",
+        "Follow care label and record existing cuff wear."
+      ],
+      [
+        "Cream silk dress",
+        "Specialist cleaning",
+        "Cleaning Area",
+        "Review marked stain before cleaning. Follow care label."
+      ]
+    ],
+    "part": null,
+    "pain": "A coat is ready while a dress on the same order still needs attention.",
+    "answer": "Check the progress and location of each garment without assuming the whole order is ready.",
+    "details": [
+      "Record fabric, marks and special care instructions in garment notes.",
+      "Photograph existing damage and areas needing attention.",
+      "Find garments by their recorded rail or storage location."
+    ],
+    "steps": [
+      {
+        "title": "Book in",
+        "text": "Find the customer and add each garment. Note fabric, marks, condition and the promised collection date.",
+        "link": "book-in"
+      },
+      {
+        "title": "Quote & take payment",
+        "text": "Add the agreed cleaning, pressing or stain-treatment services and record the price and payment.",
+        "link": "quotes-and-payments"
+      },
+      {
+        "title": "Assign the work",
+        "text": "Assign the work and keep care-label instructions and areas needing attention with each garment.",
+        "link": "staff-and-workshop"
+      },
+      {
+        "title": "Track each item",
+        "text": "Update each garment’s status and cleaning-area or rail location as it progresses.",
+        "link": "item-tracking"
+      },
+      {
+        "title": "Ready for collection",
+        "text": "Check the finished garments, record any notes and notify the customer when ready.",
+        "link": "complete-repairs"
+      },
+      {
+        "title": "Collect & finalise",
+        "text": "Locate all garments being returned, settle any balance and finalise the order with a receipt.",
+        "link": "collection-and-finalisation"
+      }
+    ],
+    "tools": [
+      "Record marks, existing damage and care instructions with each garment.",
+      "Manage cleaning and pressing services in a reusable product catalogue.",
+      "Keep special handling instructions with the worker carrying out the service."
+    ],
+    "title": "Dry Cleaning POS Software & Garment Tracking | RepairPOS",
+    "hero": "dry-cleaning-contact-banner dry-cleaning-hero",
+    "image": "industry-dry-cleaning.webp",
+    "description": "RepairPOS for dry cleaners. Track individual garments, cleaning instructions, photos, due dates, payments and collection in one connected workflow."
+  }
+}

@@ -12399,3 +12399,8 @@ footer a:hover {
 .how-dashboard h2 { font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; }
 .how-dashboard-screen { max-width: none; }
 .how-dashboard-screen img { height: auto; max-height: 440px; }
+
+/* Industry pages share the overview and guide components. */
+.industry-screen { max-width: none; }
+.industry-screen img { height: auto; max-height: 440px; }
+.industry-page h2 { font-weight: 800; letter-spacing: -0.03em; }
