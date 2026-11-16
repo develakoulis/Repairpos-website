@@ -1,4 +1,5 @@
 <?php
+$hasAppScreenshots = true;
 $pageTitle = "Mobile Phone Repair Shop Software & POS | RepairPOS";
 $pageDescription = "RepairPOS is mobile phone repair shop software for phone repair stores and device repair businesses. Manage repair tickets, diagnostics, IMEI notes, parts, payments, photos and customer updates.";
 ?>
@@ -136,7 +137,7 @@ $pageDescription = "RepairPOS is mobile phone repair shop software for phone rep
         <div class="row align-items-center g-5">
 
           <div class="col-lg-6">
-            <img src="/assets/images/items-services.png" class="img-fluid rounded-4" alt="Mobile phone repair ticket software screen">
+            <button type="button" class="app-screenshot-trigger" data-bs-toggle="modal" data-bs-target="#appScreenshotPreview" data-screen="/assets/images/app/phone-items.webp" data-title="Phone repair items and services" data-alt="RepairPOS demo: phone repair items and services" aria-label="Enlarge phone repair items and services screenshot"><img src="/assets/images/app/phone-items.webp" class="img-fluid rounded-4 app-screenshot" alt="RepairPOS demo: phone repair items and services" width="1356" height="455" loading="lazy" decoding="async"></button>
           </div>
 
           <div class="col-lg-6">
@@ -273,7 +274,7 @@ $pageDescription = "RepairPOS is mobile phone repair shop software for phone rep
           </div>
 
           <div class="col-lg-6">
-            <img src="/assets/images/reports.png" class="img-fluid rounded-4" alt="Phone repair shop reporting dashboard">
+            <button type="button" class="app-screenshot-trigger" data-bs-toggle="modal" data-bs-target="#appScreenshotPreview" data-screen="/assets/images/app/reports.webp" data-title="Repair shop sales reporting" data-alt="RepairPOS demo: repair shop sales reporting" aria-label="Enlarge repair shop sales reporting screenshot"><img src="/assets/images/app/reports.webp" class="img-fluid rounded-4 app-screenshot" alt="RepairPOS demo: repair shop sales reporting" width="1376" height="577" loading="lazy" decoding="async"></button>
           </div>
 
         </div>

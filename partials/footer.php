@@ -11,6 +11,8 @@
       </div>
 
       <div class="footer-links">
+        <a href="/how-it-works">How It Works</a>
+        <a href="/repairpos-guides">User Guides</a>
         <a href="index.php#features">Features</a>
         <a href="contact.php">Contact</a>
       </div>
@@ -19,3 +21,5 @@
 
   </div>
 </footer>
+
+<?php if (!empty($hasAppScreenshots)) include __DIR__ . '/app-screenshot-viewer.php'; ?>

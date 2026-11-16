@@ -1,4 +1,5 @@
 <?php
+$hasAppScreenshots = true;
 $pageTitle = "RepairPOS | POS Software for Repair Shops";
 $pageDescription = "RepairPOS is a cloud based point of sale and job management software for repair shops. Manage jobs, customers, invoices, photos, payments and notifications in one simple system.";
 ?>
@@ -87,89 +88,49 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
       </p>
     </div>
 
+    <?php
+    $previewPanels = [
+      ['Create tickets', 'Find a customer, set a due date and book in their repair items.', 'create.webp'],
+      ['Track each item', 'Keep each item’s services, status and workshop location together.', 'items.webp'],
+      ['Before & after photos', 'Record each item’s condition and show the finished repair.', 'photos.webp'],
+      ['Your workshop at a glance', 'See open orders, urgent jobs and repairs ready for collection.', 'dashboard.webp'],
+      ['Deposits & payments', 'Take a deposit or full payment and keep the balance in view.', 'payment.webp'],
+      ['Parts & materials', 'Add parts to a repair alongside the work being carried out.', 'steps/parts-and-materials-4.webp'],
+      ['Collection & finalisation', 'Settle the balance, hand over the items and finalise the order.', 'final-payment.webp'],
+      ['Reports & insights', 'Keep an eye on sales, payments and workshop performance.', 'reports.webp'],
+    ];
+    ?>
     <div class="workflow-carousel-wrap">
-
-      <button class="workflow-arrow workflow-prev">
-        <i class="bi bi-arrow-left"></i>
+      <button type="button" class="workflow-arrow workflow-prev" aria-label="Previous panel" aria-controls="workflow-panels">
+        <i class="bi bi-arrow-left" aria-hidden="true"></i>
       </button>
-
-      <div class="workflow-carousel">
-
-        <!-- 1 -->
-        <div class="workflow-slide">
-          <div class="workflow-card">
-
-            <img src="assets/images/create-ticket.png" alt="Create ticket screen">
-
-            <div class="workflow-content">
-
-              <div class="workflow-header">
-                <div class="workflow-number">1</div>
-                <h3>Create Tickets</h3>
+      <div class="workflow-carousel" id="workflow-panels" role="region" aria-label="RepairPOS feature screenshots" tabindex="0">
+        <?php foreach ($previewPanels as $panelIndex => [$panelTitle, $panelDescription, $panelImage]): ?>
+          <?php [$panelWidth, $panelHeight] = getimagesize(__DIR__ . '/assets/images/app/' . $panelImage); ?>
+          <div class="workflow-slide">
+            <div class="workflow-card">
+              <button type="button" class="app-screenshot-trigger" data-bs-toggle="modal" data-bs-target="#appScreenshotPreview" data-screen="/assets/images/app/<?= $panelImage ?>" data-title="<?= htmlspecialchars($panelTitle, ENT_QUOTES, 'UTF-8') ?>" data-alt="RepairPOS demo: <?= htmlspecialchars($panelTitle, ENT_QUOTES, 'UTF-8') ?>" aria-label="Enlarge <?= htmlspecialchars($panelTitle, ENT_QUOTES, 'UTF-8') ?> screenshot">
+                <img src="/assets/images/app/<?= $panelImage ?>" class="app-screenshot" alt="RepairPOS demo: <?= htmlspecialchars($panelTitle, ENT_QUOTES, 'UTF-8') ?>" width="<?= $panelWidth ?>" height="<?= $panelHeight ?>" loading="lazy" decoding="async">
+              </button>
+              <div class="workflow-content">
+                <div class="workflow-header">
+                  <div class="workflow-number"><?= $panelIndex + 1 ?></div>
+                  <h3><?= htmlspecialchars($panelTitle, ENT_QUOTES, 'UTF-8') ?></h3>
+                </div>
+                <p><?= $panelDescription ?></p>
               </div>
-
-              <p>
-                Capture customer details, order types,
-                notes, deadlines and quote information.
-              </p>
-
             </div>
-
           </div>
-        </div>
-
-        <!-- 2 -->
-        <div class="workflow-slide">
-          <div class="workflow-card">
-
-            <img src="assets/images/items-services.png" alt="Items and services screen">
-
-            <div class="workflow-content">
-
-              <div class="workflow-header">
-                <div class="workflow-number">2</div>
-                <h3>Log Items & Services</h3>
-              </div>
-
-              <p>
-                Add repair items, assign services,
-                track pricing and manage balances.
-              </p>
-
-            </div>
-
-          </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="workflow-slide">
-          <div class="workflow-card">
-
-            <img src="assets/images/before-after.png" alt="Before and after records">
-
-            <div class="workflow-content">
-
-              <div class="workflow-header">
-                <div class="workflow-number">3</div>
-                <h3>Before & After Photos</h3>
-              </div>
-
-              <p>
-                Store repair photos, service history,
-                brands and completed work records.
-              </p>
-
-            </div>
-
-          </div>
-        </div>
-
+        <?php endforeach; ?>
       </div>
-
-      <button class="workflow-arrow workflow-next">
-        <i class="bi bi-arrow-right"></i>
+      <button type="button" class="workflow-arrow workflow-next" aria-label="Next panel" aria-controls="workflow-panels">
+        <i class="bi bi-arrow-right" aria-hidden="true"></i>
       </button>
+      <p class="workflow-position text-center text-muted-custom mb-0" aria-live="polite" aria-atomic="true"></p>
+    </div>
 
+    <div class="text-center mt-4">
+      <a class="btn btn-outline-light" href="/how-it-works">See the full repair workflow</a>
     </div>
 
   </div>
@@ -429,22 +390,28 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<script>
+(() => {
+  const carousel = document.querySelector('.workflow-carousel');
+  const previous = document.querySelector('.workflow-prev');
+  const next = document.querySelector('.workflow-next');
+  const position = document.querySelector('.workflow-position');
+  const slides = [...carousel.querySelectorAll('.workflow-slide')];
+  const stepWidth = () => slides[0].getBoundingClientRect().width + parseFloat(getComputedStyle(carousel).gap);
+  const update = () => {
+    const first = Math.round(carousel.scrollLeft / stepWidth()) + 1;
+    const last = Math.min(slides.length, first + Math.round(carousel.clientWidth / stepWidth()) - 1);
+    position.textContent = (first === last ? first : first + '–' + last) + ' of ' + slides.length;
+    previous.disabled = carousel.scrollLeft < 2;
+    next.disabled = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 2;
+  };
+  const move = direction => carousel.scrollBy({left: direction * stepWidth(), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+  previous.addEventListener('click', () => move(-1));
+  next.addEventListener('click', () => move(1));
+  carousel.addEventListener('scroll', update, {passive: true});
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
 </body>
 </html>
-<script>
-  const workflowCarousel = document.querySelector('.workflow-carousel');
-
-  document.querySelector('.workflow-next').addEventListener('click', () => {
-    workflowCarousel.scrollBy({
-      left: 420,
-      behavior: 'smooth'
-    });
-  });
-
-  document.querySelector('.workflow-prev').addEventListener('click', () => {
-    workflowCarousel.scrollBy({
-      left: -420,
-      behavior: 'smooth'
-    });
-  });
-</script>

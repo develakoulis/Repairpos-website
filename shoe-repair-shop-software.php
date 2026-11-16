@@ -1,4 +1,5 @@
 <?php
+$hasAppScreenshots = true;
 $pageTitle = "Shoe Repair POS Software for Cobblers | RepairPOS";
 $pageDescription = "RepairPOS is shoe repair POS software for cobblers and shoe repair shops. Manage repair tickets, soles, heels, quotes, photos, payments, SMS updates and workshop workflow.";
 ?>
@@ -127,7 +128,7 @@ $pageDescription = "RepairPOS is shoe repair POS software for cobblers and shoe 
         <div class="row align-items-center g-5">
 
           <div class="col-lg-6">
-            <img src="/assets/images/items-services.png" class="img-fluid rounded-4" alt="Shoe repair POS ticket screen">
+            <button type="button" class="app-screenshot-trigger" data-bs-toggle="modal" data-bs-target="#appScreenshotPreview" data-screen="/assets/images/app/items.webp" data-title="Shoe repair items and services" data-alt="RepairPOS demo: shoe repair items and services" aria-label="Enlarge shoe repair items and services screenshot"><img src="/assets/images/app/items.webp" class="img-fluid rounded-4 app-screenshot" alt="RepairPOS demo: shoe repair items and services" width="1356" height="519" loading="lazy" decoding="async"></button>
           </div>
 
           <div class="col-lg-6">
@@ -254,7 +255,7 @@ $pageDescription = "RepairPOS is shoe repair POS software for cobblers and shoe 
           </div>
 
           <div class="col-lg-6">
-            <img src="/assets/images/reports.png" class="img-fluid rounded-4" alt="Repair shop reporting dashboard">
+            <button type="button" class="app-screenshot-trigger" data-bs-toggle="modal" data-bs-target="#appScreenshotPreview" data-screen="/assets/images/app/reports.webp" data-title="Repair shop sales reporting" data-alt="RepairPOS demo: repair shop sales reporting" aria-label="Enlarge repair shop sales reporting screenshot"><img src="/assets/images/app/reports.webp" class="img-fluid rounded-4 app-screenshot" alt="RepairPOS demo: repair shop sales reporting" width="1376" height="577" loading="lazy" decoding="async"></button>
           </div>
 
         </div>

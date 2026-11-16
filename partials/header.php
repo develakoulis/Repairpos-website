@@ -66,8 +66,8 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/contact">
-            Contact
+          <a class="nav-link" href="/how-it-works">
+            How It Works
           </a>
         </li>
 

@@ -11879,6 +11879,7 @@ footer a:hover {
 
   overflow-x: auto;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 
   padding-bottom: 0.5rem;
 
@@ -11890,6 +11891,7 @@ footer a:hover {
 }
 
 .workflow-slide {
+  scroll-snap-align: start;
   flex: 0 0 calc(33.333% - 1rem);
   min-width: calc(33.333% - 1rem);
 }
@@ -11925,6 +11927,13 @@ footer a:hover {
   border-color: #b08b6f;
 }
 
+.workflow-arrow:disabled { opacity: 0.35; cursor: default; }
+.workflow-position { padding-top: 1rem; font-size: 0.85rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .workflow-carousel { scroll-behavior: auto; }
+}
+
 .workflow-prev {
   left: -22px;
 }
@@ -11949,9 +11958,14 @@ footer a:hover {
     min-width: 100%;
   }
 
-  .workflow-arrow {
-    display: none;
-  }
+  .workflow-carousel-wrap { display: grid; grid-template-columns: 48px 1fr 48px; gap: 1rem; }
+  .workflow-carousel { grid-column: 1 / -1; min-width: 0; }
+  .workflow-arrow { position: static; transform: none; grid-row: 2; }
+  .workflow-prev { grid-column: 1; }
+  .workflow-next { grid-column: 3; }
+  .workflow-position { grid-column: 2; grid-row: 2; align-self: center; padding-top: 0; }
+  .pricing-card { padding: 1.5rem; }
+  .pricing-card h2 { font-size: 1.8rem; overflow-wrap: anywhere; }
 
 }
 
@@ -12189,3 +12203,199 @@ footer a:hover {
       url('../assets/images/watch-repair-shop-hero.png')
       72% center / cover no-repeat;
 }
+
+/* HOW IT WORKS */
+
+.how-it-works #workflow,
+.how-step,
+#job-management, #customers, #quotes-invoicing, #inventory, #staff,
+#reporting, #communication, #automation, #integrations {
+    scroll-margin-top: 110px;
+}
+
+.how-it-works .how-hero {
+    padding: 4rem 0;
+}
+
+.how-item-example,
+.how-basic-card {
+    border: 1px solid rgba(201,167,122,0.14);
+    border-radius: 1rem;
+    background: linear-gradient(135deg, rgba(70,48,30,0.32), rgba(30,22,16,0.92));
+}
+
+.how-item-example {
+    padding: 1.5rem;
+}
+
+.how-item-example-heading h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.how-summary-label,
+.how-example-item p,
+.how-example-item > span {
+    color: #c0b6ad;
+    font-size: 0.85rem;
+}
+
+.how-example-item {
+    padding: 1rem 0;
+    border-top: 1px solid var(--rp-border);
+}
+
+.how-example-item p {
+    margin: 0.4rem 0;
+}
+
+.how-status {
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.how-status-ready { background: #214a37; color: #d0efdc; }
+.how-status-working { background: #57401d; color: #f8dfac; }
+
+.how-description,
+.how-basic-card p,
+.how-features-link {
+    color: var(--rp-muted);
+    line-height: 1.65;
+}
+
+.how-flow-nav { margin: 2rem 0 0.5rem; }
+.how-flow-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+.how-flow-nav a {
+    display: block;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--rp-border);
+    border-radius: 0.6rem;
+    font-size: 0.85rem;
+}
+.how-flow-number { color: #c9a77a; margin-right: 0.35rem; }
+
+.how-step {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--rp-border);
+}
+
+.how-step h3 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+.how-description { max-width: 540px; margin: 0.75rem 0; }
+.how-detail-link { color: #d4b18e !important; font-size: 0.85rem; }
+.how-detail-link:hover { text-decoration: underline !important; }
+
+.how-screen {
+    max-width: 540px;
+    margin-right: auto;
+    overflow: hidden;
+    border: 1px solid rgba(201,167,122,0.14);
+    border-radius: 0.75rem;
+    background: var(--rp-panel);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.how-screen-link {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: #f9f9f9;
+    cursor: zoom-in;
+}
+
+.how-screen img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.how-screen figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.4rem;
+    padding: 0.7rem 0.85rem;
+    color: #d4c5b9;
+    font-size: 0.7rem;
+}
+.how-screen figcaption span { color: var(--rp-muted); }
+.how-demo-note { color: #b8aea6; font-size: 0.75rem; line-height: 1.6; }
+.how-item-example .how-demo-note { margin-top: 0.5rem; }
+
+.how-basic-card { padding: 1.25rem; transition: border-color 0.2s ease; }
+.how-basic-card:hover { border-color: #b08b6f; }
+.how-basic-card h3 { font-size: 1.05rem; font-weight: 700; }
+.how-basic-card p { font-size: 0.85rem; margin-bottom: 0.5rem; }
+.how-basic-card .feature-icon { flex-shrink: 0; }
+.how-features-link { font-size: 0.9rem; }
+.how-features-link a { text-decoration: underline !important; text-underline-offset: 3px; }
+
+.how-screen-link:focus-visible,
+.how-basic-card:focus-visible,
+.how-flow-nav a:focus-visible {
+    outline: 3px solid #c9a77a;
+    outline-offset: 4px;
+}
+
+.how-preview-modal .modal-content { background: var(--rp-bg); color: var(--rp-text); }
+.how-preview-modal .modal-header { border-bottom-color: var(--rp-border); }
+.how-preview-modal .modal-header p { color: var(--rp-muted); }
+.how-preview-modal .modal-body { padding: 1.5rem; overflow: auto; }
+.how-preview-modal img { height: auto; }
+
+@media (max-width: 991px) {
+    .how-screen { margin-right: auto; }
+    .how-screen img { height: auto; max-height: 440px; }
+    .how-flow-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
+    .how-flow-nav a { display: flex; align-items: center; gap: 0.5rem; height: 100%; min-height: 54px; padding: 0.75rem; line-height: 1.4; }
+    .how-flow-number { flex-shrink: 0; margin-right: 0; }
+}
+
+/* USER GUIDES */
+.how-guide-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 0.75rem;
+    padding: 0.55rem 0;
+    color: #d4b18e !important;
+    font-weight: 600;
+}
+
+.how-guide-link:hover { text-decoration: underline !important; }
+.repair-guide .how-hero { padding: 3.5rem 0; }
+.guide-breadcrumb { color: var(--rp-muted); font-size: 0.85rem; }
+.guide-breadcrumb > span { margin: 0 0.3rem; }
+.guide-breadcrumb a { text-decoration: underline !important; text-underline-offset: 3px; }
+.repair-guide .how-screen { max-width: 100%; }
+.repair-guide .how-screen img { height: auto; max-height: 440px; }
+.repair-guide .how-screen figcaption { font-size: 0.8rem; }
+.guide-instructions { list-style: none; padding: 0; margin: 0; }
+.guide-step { padding: 2rem 0; border-bottom: 1px solid var(--rp-border); scroll-margin-top: 110px; }
+.guide-step:first-child { padding-top: 0; }
+.guide-instructions h2 { font-size: 1.5rem; font-weight: 700; }
+.guide-note h2,
+.guide-related-title { font-size: 1.2rem; font-weight: 700; }
+.guide-instructions p,
+.guide-note p,
+.guide-extra p { color: var(--rp-muted); line-height: 1.7; margin-bottom: 0; }
+.guide-note { padding: 1.25rem; background: rgba(176,139,111,0.08); border-left: 3px solid #b08b6f; border-radius: 0 0.5rem 0.5rem 0; }
+.guide-check { color: #d4c5b9; line-height: 1.7; }
+.guide-extra { max-width: 800px; scroll-margin-top: 110px; }
+.guide-extra h2 { font-size: 1.5rem; font-weight: 700; }
+.guide-page-nav { padding-top: 1.5rem; border-top: 1px solid var(--rp-border); font-size: 0.9rem; }
+
+/* Shared app screenshots */
+.app-screenshot-trigger { display: block; width: 100%; padding: 0; border: 0; background: #f9f9f9; cursor: zoom-in; }
+.app-screenshot-trigger:focus-visible { outline: 3px solid #c9a77a; outline-offset: 4px; }
+.app-screenshot { display: block; width: 100%; height: auto; object-fit: contain; background: #f9f9f9; }
+.workflow-card img.app-screenshot { object-fit: contain; }
+.how-dashboard h2 { font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; }
+.how-dashboard-screen { max-width: none; }
+.how-dashboard-screen img { height: auto; max-height: 440px; }

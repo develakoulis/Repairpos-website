@@ -48,7 +48,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
       <div class="row g-4">
 
         <!-- JOB MANAGEMENT -->
-        <div class="col-md-6 col-xl-4">
+        <div id="job-management" class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
 
             <div class="feature-side-header">
@@ -74,7 +74,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
         </div>
 
         <!-- CUSTOMER -->
-        <div class="col-md-6 col-xl-4">
+        <div id="customers" class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
 
             <div class="feature-side-header">
@@ -100,7 +100,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
         </div>
 
         <!-- QUOTING -->
-        <div class="col-md-6 col-xl-4">
+        <div id="quotes-invoicing" class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
 
             <div class="feature-side-header">
@@ -126,7 +126,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
         </div>
 
         <!-- INVENTORY -->
-        <div class="col-md-6 col-xl-4">
+        <div id="inventory" class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
 
             <div class="feature-side-header">
@@ -152,7 +152,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
         </div>
 
         <!-- STAFF -->
-        <div class="col-md-6 col-xl-4">
+        <div id="staff" class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
 
             <div class="feature-side-header">
@@ -178,7 +178,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
         </div>
 
         <!-- REPORTS -->
-        <div class="col-md-6 col-xl-4">
+        <div id="reporting" class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
 
             <div class="feature-side-header">
@@ -204,7 +204,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
         </div>
 
         <!-- COMMUNICATION -->
-        <div class="col-md-6 col-xl-4">
+        <div id="communication" class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
 
             <div class="feature-side-header">
@@ -230,7 +230,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
         </div>
 
         <!-- AI -->
-        <div class="col-md-6 col-xl-4">
+        <div id="automation" class="col-md-6 col-xl-4">
           <div class="pricing-card h-100">
 
             <div class="feature-side-header">
@@ -256,7 +256,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
         </div>
 
         <!-- INTEGRATIONS -->
-<div class="col-md-6 col-xl-4">
+<div id="integrations" class="col-md-6 col-xl-4">
   <div class="pricing-card h-100">
 
     <div class="feature-side-header">
