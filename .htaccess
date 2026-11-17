@@ -2,6 +2,9 @@ DirectoryIndex index.php
 
 RewriteEngine On
 
+# Diagnostic mail logs are private.
+RewriteRule ^(?:smtp-debug-log|mail-error-log)\.txt$ - [F,L,NC]
+
 # Do not rewrite form handler
 RewriteRule ^send-contact\.php$ - [L]
 

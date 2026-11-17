@@ -11,9 +11,9 @@ $tools = [
     ['camera', 'Photos & item notes', $industry['tools'][0], 'repair-photos'],
     [$industryId === 'dry-cleaning' ? 'tags' : 'box-seam', $industryId === 'dry-cleaning' ? 'Services & prices' : 'Parts & materials', $industry['tools'][1], $industryId === 'dry-cleaning' ? 'products-and-stock' : 'parts-and-materials'],
     ['people', 'Staff & instructions', $industry['tools'][2], 'staff-and-workshop'],
-    ['credit-card', 'Deposits & balances', 'Take a deposit, full payment or the remaining balance, and provide a receipt from the order.', 'quotes-and-payments'],
-    ['chat-dots', 'Customer updates', 'Send email or SMS updates from the order so the customer knows when to collect.', 'customer-updates'],
-    ['bar-chart', 'Sales & reporting', 'Review sales and payments alongside day-to-day workshop activity.', 'reports'],
+    ['credit-card', 'Deposits & balances', $industry['tools'][3], 'quotes-and-payments'],
+    ['chat-dots', 'Customer updates', $industry['tools'][4], 'customer-updates'],
+    ['bar-chart', 'Sales & reporting', $industry['tools'][5], 'reports'],
 ];
 ?>
 <!DOCTYPE html>
@@ -46,15 +46,14 @@ $tools = [
           </figure>
         </div>
         <div class="col-lg-5">
-          <div class="eyebrow mb-2">Built for <?= $escape($industry['audience']) ?></div>
-          <h2 id="industry-items-title">Track <?= $escape($industry['plural']) ?>. Not just orders.</h2>
+          <h2 id="industry-items-title"><?= $escape($industry['trackingTitle']) ?></h2>
           <p class="text-muted-custom mt-3"><?= $escape($industry['pain']) ?> <?= $escape($industry['answer']) ?></p>
           <ul class="check-list mb-3">
             <?php foreach ($industry['details'] as $detail): ?>
               <li><i class="bi bi-check-circle" aria-hidden="true"></i><?= $escape($detail) ?></li>
             <?php endforeach; ?>
           </ul>
-          <a class="how-guide-link" href="/item-tracking">See how item tracking works <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          <a class="how-guide-link" href="/item-tracking"><?= $escape($industry['trackingLink']) ?> <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -63,8 +62,8 @@ $tools = [
   <section class="section-padding pt-0" aria-labelledby="industry-flow-title">
     <div class="container px-4 px-lg-5">
       <div class="section-title mb-4">
-        <h2 id="industry-flow-title"><?= $escape($industry['name']) ?>, from booking to collection</h2>
-        <p>One customer order. A clear record for every <?= $escape($industry['noun']) ?>.</p>
+        <h2 id="industry-flow-title"><?= $escape($industry['flowTitle']) ?></h2>
+        <p><?= $escape($industry['flowIntro']) ?></p>
       </div>
       <ol class="row g-3 g-lg-4 list-unstyled mb-0">
         <?php foreach ($industry['steps'] as $index => $step): ?>
@@ -86,8 +85,8 @@ $tools = [
   <section class="section-padding pt-0" aria-labelledby="industry-tools-title">
     <div class="container px-4 px-lg-5">
       <div class="section-title mb-4">
-        <h2 id="industry-tools-title">The counter and workshop, connected</h2>
-        <p>Everyday POS tools with the item detail a <?= $escape($industryId === 'dry-cleaning' ? 'garment care' : strtolower($industry['name'])) ?> business needs.</p>
+        <h2 id="industry-tools-title"><?= $escape($industry['toolsTitle']) ?></h2>
+        <p><?= $escape($industry['toolsIntro']) ?></p>
       </div>
       <div class="row g-3 g-lg-4">
         <?php foreach ($tools as [$icon, $title, $description, $link]): ?>
@@ -108,7 +107,7 @@ $tools = [
   <section class="pb-5">
     <div class="container px-4 px-lg-5">
       <div class="cta-bar d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-4">
-        <div><h2>See RepairPOS for your <?= $escape($industryId === 'dry-cleaning' ? 'dry cleaning shop' : strtolower($industry['name']) . ' business') ?></h2><p>Book a demo and walk through your day-to-day workflow.</p></div>
+        <div><h2><?= $escape($industry['ctaTitle']) ?></h2><p><?= $escape($industry['ctaText']) ?></p></div>
         <a class="btn btn-primary btn-lg flex-shrink-0" href="/contact">Book a Demo</a>
       </div>
     </div>
