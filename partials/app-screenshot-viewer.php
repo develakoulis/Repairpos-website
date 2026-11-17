@@ -4,7 +4,7 @@
       <div><h2 class="modal-title fs-5" id="appScreenshotPreviewTitle">RepairPOS preview</h2><p class="small mb-0">RepairPOS demo · Sample data</p></div>
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close screenshot"></button>
     </div>
-    <div class="modal-body"><img id="appScreenshotPreviewImage" class="img-fluid d-block mx-auto" alt=""></div>
+    <div class="modal-body d-flex"><img id="appScreenshotPreviewImage" class="img-fluid d-block m-auto" alt=""></div>
   </div></div>
 </div>
 <script>

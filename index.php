@@ -1,7 +1,7 @@
 <?php
 $hasAppScreenshots = true;
 $pageTitle = "RepairPOS | POS Software for Repair Shops";
-$pageDescription = "RepairPOS is a cloud based point of sale and job management software for repair shops. Manage jobs, customers, invoices, photos, payments and notifications in one simple system.";
+$pageDescription = "RepairPOS is point of sale and job management software for repair shops. Book in repairs, track each item, take payments and send collection updates.";
 ?>
 
 <!DOCTYPE html>
@@ -17,9 +17,9 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
   <div class="container px-4 px-lg-5">
     <div class="row">
       <div class="col-lg-7 col-xl-6">
-        <div class="eyebrow">POS software for repair businesses</div>
-        <h1>Run your repair shop from one simple system.</h1>
-        <p>Manage job tickets, customer details, photos, invoices, payments and pickup notifications from drop-off or mail-in to completion.</p>
+        <div class="eyebrow">RepairPOS</div>
+        <h1>POS software for repair shops.</h1>
+        <p>Manage repair tickets, customer details, quotes and payments in one place. Track each item from drop-off to collection, with photos, workshop notes and customer updates.</p>
         <div class="d-flex flex-column flex-sm-row gap-3">
           <a class="btn btn-primary btn-lg" href="contact">Start Free Trial</a>
           <a class="btn btn-outline-light btn-lg" href="features">View Features</a>
@@ -37,7 +37,7 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
           <div class="feature-icon"><i class="bi bi-card-checklist"></i></div>
           <div>
             <h3>Digital Job Tickets</h3>
-            <p>Track notes, photos, status, services and customer details in one place.</p>
+            <p>Keep the repair notes and photos with the job.</p>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
           <div class="feature-icon"><i class="bi bi-bell"></i></div>
           <div>
             <h3>Customer Updates</h3>
-            <p>Send SMS and email updates when jobs are created, quoted or ready.</p>
+            <p>Let customers know about quotes and completed repairs by text or email.</p>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
           <div class="feature-icon"><i class="bi bi-credit-card"></i></div>
           <div>
             <h3>Built-in POS</h3>
-            <p>Create invoices, take payments, issue receipts and manage balances.</p>
+            <p>Take deposits, settle balances and print or email receipts.</p>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
           <div class="feature-icon"><i class="bi bi-search"></i></div>
           <div>
             <h3>Fast Lookup</h3>
-            <p>Find jobs by name, mobile, email, order number or ticket status.</p>
+            <p>Look up a repair by customer, order number or status.</p>
           </div>
         </div>
       </div>
@@ -80,69 +80,35 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
   <div class="container px-4 px-lg-5">
 
     <div class="section-title">
-      <h2>See RepairPOS in action</h2>
+      <h2>Follow a repair order in RepairPOS</h2>
 
       <p>
-        Manage repairs, customers, payments, reporting and communication
-        from one connected platform built for modern repair businesses.
+        Example: Alex leaves black leather heels for a sole repair and a brown leather bag for handle stitching. Follow the same $110 order from booking to collection.
       </p>
     </div>
 
     <?php
+    $carouselId = 'workflow-panels';
+    $carouselLabel = 'Example shoe and bag repair order, from booking to collection';
     $previewPanels = [
-      ['Create tickets', 'Find a customer, set a due date and book in their repair items.', 'create.webp'],
-      ['Track each item', 'Keep each item’s services, status and workshop location together.', 'items.webp'],
-      ['Before & after photos', 'Record each item’s condition and show the finished repair.', 'photos.webp'],
-      ['Your workshop at a glance', 'See open orders, urgent jobs and repairs ready for collection.', 'dashboard.webp'],
-      ['Deposits & payments', 'Take a deposit or full payment and keep the balance in view.', 'payment.webp'],
-      ['Parts & materials', 'Add parts to a repair alongside the work being carried out.', 'steps/parts-and-materials-4.webp'],
-      ['Collection & finalisation', 'Settle the balance, hand over the items and finalise the order.', 'final-payment.webp'],
-      ['Reports & insights', 'Keep an eye on sales, payments and workshop performance.', 'reports.webp'],
+      ['Book in the heels and bag', 'Alex’s heels need a sole replacement; the bag needs handle stitching. The two repairs total $110.', 'create.webp'],
+      ['Take a $30 deposit', 'Record the deposit against Alex’s order. The remaining $80 is due when the repairs are collected.', 'payment.webp'],
+      ['Track each repair', 'The heels are ready on the shelf while the bag is still with Sam in the workshop.', 'items.webp'],
+      ['Add the repair photos', 'Keep before-and-after photos with the heels, showing their condition and the finished sole repair.', 'photos.webp'],
+      ['Prepare for collection', 'Both repairs are complete. Record storage A12 and choose whether to send Alex a text, an email or both.', 'complete.webp'],
+      ['Collect the $80 balance', 'Take the remaining payment, issue a receipt and hand the heels and bag back to Alex.', 'final-payment.webp'],
     ];
+    include __DIR__ . '/partials/screenshot-carousel.php';
     ?>
-    <div class="workflow-carousel-wrap">
-      <button type="button" class="workflow-arrow workflow-prev" aria-label="Previous panel" aria-controls="workflow-panels">
-        <i class="bi bi-arrow-left" aria-hidden="true"></i>
-      </button>
-      <div class="workflow-carousel" id="workflow-panels" role="region" aria-label="RepairPOS feature screenshots" tabindex="0">
-        <?php foreach ($previewPanels as $panelIndex => [$panelTitle, $panelDescription, $panelImage]): ?>
-          <?php [$panelWidth, $panelHeight] = getimagesize(__DIR__ . '/assets/images/app/' . $panelImage); ?>
-          <div class="workflow-slide">
-            <div class="workflow-card">
-              <button type="button" class="app-screenshot-trigger" data-bs-toggle="modal" data-bs-target="#appScreenshotPreview" data-screen="/assets/images/app/<?= $panelImage ?>" data-title="<?= htmlspecialchars($panelTitle, ENT_QUOTES, 'UTF-8') ?>" data-alt="RepairPOS demo: <?= htmlspecialchars($panelTitle, ENT_QUOTES, 'UTF-8') ?>" aria-label="Enlarge <?= htmlspecialchars($panelTitle, ENT_QUOTES, 'UTF-8') ?> screenshot">
-                <img src="/assets/images/app/<?= $panelImage ?>" class="app-screenshot" alt="RepairPOS demo: <?= htmlspecialchars($panelTitle, ENT_QUOTES, 'UTF-8') ?>" width="<?= $panelWidth ?>" height="<?= $panelHeight ?>" loading="lazy" decoding="async">
-              </button>
-              <div class="workflow-content">
-                <div class="workflow-header">
-                  <div class="workflow-number"><?= $panelIndex + 1 ?></div>
-                  <h3><?= htmlspecialchars($panelTitle, ENT_QUOTES, 'UTF-8') ?></h3>
-                </div>
-                <p><?= $panelDescription ?></p>
-              </div>
-            </div>
-          </div>
-        <?php endforeach; ?>
-      </div>
-      <button type="button" class="workflow-arrow workflow-next" aria-label="Next panel" aria-controls="workflow-panels">
-        <i class="bi bi-arrow-right" aria-hidden="true"></i>
-      </button>
-      <p class="workflow-position text-center text-muted-custom mb-0" aria-live="polite" aria-atomic="true"></p>
-    </div>
-
-    <div class="text-center mt-4">
-      <a class="btn btn-outline-light" href="/how-it-works">See the full repair workflow</a>
-    </div>
 
   </div>
 </section>
 <section class="section-padding" id="industries">
   <div class="container px-4 px-lg-5">
     <div class="section-title">
-      <h2>Made for high-volume repair shops</h2>
+      <h2>Software for your repair business</h2>
       <p>
-        RepairPOS is built for businesses that need fast job tracking,
-        quoting, customer updates and payments. Manage your whole
-        operation with powerful software.
+        From shoe repairs and alterations to device repairs, RepairPOS records the items customers leave with you. Choose your trade to see examples of the work you handle.
       </p>
     </div>
 
@@ -163,7 +129,7 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
             </div>
 
             <p>
-              Manage garment intake, customer notifications, payments and collection status.
+              Record care instructions and find finished garments on the rail.
             </p>
           </div>
         </div>
@@ -185,7 +151,7 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
             </div>
 
             <p>
-              Track resoles, heel work, polishing, pickups and customer history.
+              Book resoles and heel repairs, with notes for each pair.
             </p>
           </div>
         </div>
@@ -207,7 +173,7 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
             </div>
 
             <p>
-              Record measurements, alterations, fitting notes, deadlines and orders.
+              Keep measurements and promised dates with each garment.
             </p>
           </div>
         </div>
@@ -229,7 +195,7 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
             </div>
 
             <p>
-              Manage repairs, stone replacements, polishing, customer approvals and job tracking.
+              Record sizing, condition and repair instructions for each piece.
             </p>
           </div>
         </div>
@@ -251,7 +217,7 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
             </div>
 
             <p>
-              Track diagnostics, parts, repairs, deposits, approvals and completed jobs.
+              Keep the reported fault, test findings and parts with the device.
             </p>
           </div>
         </div>
@@ -268,12 +234,12 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
             <div class="industry-title">
               <div class="line-icon"><i class="bi bi-phone"></i></div>
               <h3>
-                <a href="mobile-phone-repair-shop-software">iPhone Repair</a>
+                <a href="mobile-phone-repair-shop-software">Phone Repair</a>
               </h3>
             </div>
 
             <p>
-              Manage screen repairs, batteries, device notes, quotes and fast pickups.
+              Match handsets to damage photos, screens and batteries.
             </p>
           </div>
         </div>
@@ -297,12 +263,11 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
         </div>
 
         <h2>
-          Simple pricing for growing repair businesses.
+          Repair shop software plans
         </h2>
 
         <p>
-          Start with the essentials and scale as your repair shop grows.
-          Built for independent workshops, multi-staff stores and high-volume repair operations.
+          Start with repair tickets, customer records and payments on a monthly plan. Talk to us about setup for larger teams or more than one shop.
         </p>
 
         <div class="pricing-feature-grid">
@@ -334,7 +299,7 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
 
           <div class="pricing-feature">
             <i class="bi bi-check-circle"></i>
-            <span>Built for repair workflows</span>
+            <span>Item status and location</span>
           </div>
 
         </div>
@@ -344,21 +309,16 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
       <!-- RIGHT -->
       <div class="pricing-cta-side">
 
-        <div class="pricing-badge">
-          Launch Offer
-        </div>
-
         <h3>
-          Start with a free trial
+          Try it with your team
         </h3>
 
         <p>
-          Explore RepairPOS with your team before committing.
-          Setup is simple and new features are added regularly.
+          Get in touch to arrange a demo or ask about the free trial.
         </p>
 
         <a class="btn btn-primary w-100" href="contact">
-          Request Demo
+          Book a Demo
         </a>
 
       </div>
@@ -374,8 +334,8 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
       <div class="d-flex align-items-start gap-3">
         <div class="feature-icon"><i class="bi bi-calendar-check"></i></div>
         <div>
-          <h2>Ready to simplify your repair workflow?</h2>
-          <p>Start with a free trial or book a short demo.</p>
+          <h2>Book a RepairPOS demo</h2>
+          <p>See the repair booking, workshop and payment screens with us. Tell us what your shop needs to manage and we’ll show you the relevant tools.</p>
         </div>
       </div>
       <div class="d-flex flex-column flex-sm-row gap-3">
@@ -390,28 +350,6 @@ $pageDescription = "RepairPOS is a cloud based point of sale and job management 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-(() => {
-  const carousel = document.querySelector('.workflow-carousel');
-  const previous = document.querySelector('.workflow-prev');
-  const next = document.querySelector('.workflow-next');
-  const position = document.querySelector('.workflow-position');
-  const slides = [...carousel.querySelectorAll('.workflow-slide')];
-  const stepWidth = () => slides[0].getBoundingClientRect().width + parseFloat(getComputedStyle(carousel).gap);
-  const update = () => {
-    const first = Math.round(carousel.scrollLeft / stepWidth()) + 1;
-    const last = Math.min(slides.length, first + Math.round(carousel.clientWidth / stepWidth()) - 1);
-    position.textContent = (first === last ? first : first + '–' + last) + ' of ' + slides.length;
-    previous.disabled = carousel.scrollLeft < 2;
-    next.disabled = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 2;
-  };
-  const move = direction => carousel.scrollBy({left: direction * stepWidth(), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
-  previous.addEventListener('click', () => move(-1));
-  next.addEventListener('click', () => move(1));
-  carousel.addEventListener('scroll', update, {passive: true});
-  window.addEventListener('resize', update);
-  update();
-})();
-</script>
+<script src="/js/screenshot-carousel.js"></script>
 </body>
 </html>

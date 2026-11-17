@@ -29,17 +29,17 @@ $pageDescription = "How Evans uses RepairPOS to manage shoe repairs, leather res
               </div>
 
               <h1>
-                How Evans Uses RepairPOS to Run a Shoe &amp; Bag Repair Business
+                How Evans uses RepairPOS for shoe and bag repairs
               </h1>
 
               <p>
-                Established in 1956, Evans is an institution in Melbourne CBD, Australia handling thousands of shoe repair and bag restorations every year. Here's why a traditional POS system wasn't enough and how RepairPOS became the centre of the workshop workflow.
+                Evans has repaired shoes, bags and leather goods in Melbourne since 1956. Its team uses RepairPOS to record the jobs coming through the door and by post.
               </p>
 
               <div class="d-flex flex-wrap gap-2">
-                <span class="badge">Shoe Repair Software</span>
-                <span class="badge">Bag Repair Software</span>
-                <span class="badge">Repair Shop POS</span>
+                <span class="badge">Shoe repairs</span>
+                <span class="badge">Bag repairs</span>
+                <span class="badge">Melbourne workshop</span>
               </div>
 
               <hr class="my-4">
@@ -55,71 +55,56 @@ $pageDescription = "How Evans uses RepairPOS to manage shoe repairs, leather res
             <section class="case-study-content mb-5">
 
               <p class="fs-5 mb-4">
-                Evans is a high-volume shoe repair and leather restoration business handling customer repairs,
-                postal repairs, quotes, payments, photos and workshop jobs every day.
+                Customers bring and post shoes, bags and leather goods to Evans for repair. Each job needs a record of the item’s condition, the work agreed and the price.
               </p>
 
               <p class="fs-5 mb-4">
-                Like many repair businesses, Evans needed more than a standard point of sale system. A basic POS
-                could take payments, but it could not properly manage repair tickets, before and after photos,
-                customer updates, staff workflow or job history.
+                Taking payment was only one part of the job. Staff also needed to find repair notes, see who was doing the work and answer customers asking when their items would be ready.
               </p>
 
-              <h2 class="fw-bolder mb-4 mt-5">The problem with standard POS systems</h2>
+              <h2 class="fw-bolder mb-4 mt-5">What the team needed</h2>
 
               <p class="fs-5 mb-4">
-                Shoe repair, bag repair and leather restoration are not simple retail transactions. Each customer
-                job can include multiple items, repair notes, photos, quote approvals, deposits, balances,
-                due dates and collection reminders.
+                A customer might leave several items needing different repairs. Staff needed to follow each item separately, even when it shared an order with the others.
               </p>
 
               <p class="fs-5 mb-4">
-                Evans needed a repair shop POS system that could track each job from enquiry and drop-off through
-                to quoting, repair work, payment and pickup.
+                The record also had to show the promised date, any deposit taken and where to find the finished repair.
               </p>
 
-              <h2 class="fw-bolder mb-4 mt-5">Why Evans uses RepairPOS</h2>
+              <h2 class="fw-bolder mb-4 mt-5">Finding a job at the counter</h2>
 
               <p class="fs-5 mb-4">
-                RepairPOS gives Evans one system to manage digital job tickets, customer details, item notes,
-                repair photos, invoices, SMS updates, email notifications and payment tracking.
+                Evans records customer details, repair instructions and intake photos when a job comes in. The order holds the quote and payments too.
               </p>
 
               <p class="fs-5 mb-4">
-                Staff can quickly search jobs by customer name, phone number, email, ticket number or repair status.
-                This makes it easier to find customer history, check job progress and manage busy workshop days.
+                When a customer calls, staff can search by name, phone, email or ticket number and check the repair’s progress.
               </p>
 
-              <h2 class="fw-bolder mb-4 mt-5">Repair workflow in one place</h2>
+              <h2 class="fw-bolder mb-4 mt-5">Following the work</h2>
 
               <p class="fs-5 mb-4">
-                Each repair ticket can include customer information, repair items, services, pricing, internal notes,
-                images, job status and outstanding balance. This gives the team a clearer view of what needs to be
-                quoted, repaired, completed or collected.
+                At the bench, the team can see the instructions and record finished work. At collection, the counter can find the items and check what’s still owed.
               </p>
 
               <ul class="fs-5 mb-4">
-                <li>Digital job tickets for shoe repairs and bag repairs</li>
+                <li>Separate repair records for each item</li>
                 <li>Before and after repair photos</li>
-                <li>Customer history and repair records</li>
-                <li>Quote tracking and approval workflow</li>
+
+                <li>Quotes and approvals</li>
                 <li>SMS and email customer updates</li>
                 <li>Invoices, deposits, balances and payments</li>
-                <li>Fast lookup by customer, ticket or status</li>
+
               </ul>
 
-              <h2 class="fw-bolder mb-4 mt-5">The result</h2>
+              <h2 class="fw-bolder mb-4 mt-5">At collection</h2>
 
               <p class="fs-5 mb-4">
-                RepairPOS helps Evans run a more organised repair workflow. Jobs are easier to find, customer
-                communication is clearer, photos are stored with the repair, and payments can be managed from
-                the same system.
+                Staff can look up the storage location, collect the remaining balance and provide a receipt from the order. The repair notes and photos stay on record for future enquiries.
               </p>
 
-              <p class="fs-5 mb-4">
-                For repair businesses handling shoes, bags, garments, jewellery, phones, computers or other customer
-                repairs, RepairPOS is designed around the way repair shops actually work.
-              </p>
+
 
             </section>
 
@@ -147,12 +132,10 @@ $pageDescription = "How Evans uses RepairPOS to manage shoe repairs, leather res
               </div>
 
               <div>
-                <h2>Built from a real repair workshop.</h2>
+                <h2>Developed around the work at Evans</h2>
 
                 <p class="mb-0">
-                  RepairPOS was developed around the daily workflow of Evans Leather Restoration.
-                  From repair tickets and customer updates to payments, photos and reporting,
-                  every feature is designed specifically for repair businesses.
+                  RepairPOS began with the day-to-day needs of Evans Leather Restoration. Book a demo to see how it could work in your shop.
                 </p>
               </div>
 

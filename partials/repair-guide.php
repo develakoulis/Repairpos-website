@@ -58,7 +58,7 @@ $pageDescription = $guide['intro'];
   <section class="pb-5" aria-labelledby="guide-cta-title">
     <div class="container px-4 px-lg-5">
       <div class="cta-bar d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-4">
-        <div><h2 id="guide-cta-title">See RepairPOS in action</h2><p>Book a demo for your repair shop.</p></div>
+        <div><h2 id="guide-cta-title">Need a hand?</h2><p>Book a demo and we’ll walk you through it.</p></div>
         <a class="btn btn-primary" href="/contact">Book a Demo</a>
       </div>
     </div>
@@ -68,7 +68,7 @@ $pageDescription = $guide['intro'];
 <div class="modal fade how-preview-modal" id="guidePreview" tabindex="-1" aria-labelledby="guidePreviewTitle" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen"><div class="modal-content">
     <div class="modal-header"><div><h2 class="modal-title fs-5" id="guidePreviewTitle">Step screenshot</h2><p class="small mb-0">RepairPOS demo · Sample data</p></div><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close screenshot"></button></div>
-    <div class="modal-body"><img id="guidePreviewImage" class="img-fluid d-block mx-auto" alt=""></div>
+    <div class="modal-body d-flex"><img id="guidePreviewImage" class="img-fluid d-block m-auto" alt=""></div>
   </div></div>
 </div>
 

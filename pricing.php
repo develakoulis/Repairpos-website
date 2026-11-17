@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Pricing | RepairPOS";
-$pageDescription = "Simple RepairPOS pricing for repair shop point of sale and job management software. Start from $29 USD per month or request custom pricing for larger workflows.";
+$pageDescription = "RepairPOS plans start at $29 USD per month. Compare the Starter plan with custom pricing for larger teams and shop setups.";
 ?>
 
 <!DOCTYPE html>
@@ -19,10 +19,9 @@ $pageDescription = "Simple RepairPOS pricing for repair shop point of sale and j
 
       <div class="section-title">
         <div class="eyebrow">Pricing</div>
-        <h1 class="pricing-page-title">Simple pricing for repair shops.</h1>
+        <h1 class="pricing-page-title">Repair shop software pricing.</h1>
         <p>
-          Start with the core tools your repair business needs. Choose a simple monthly plan,
-          or request a custom setup for larger teams, multiple locations or specialist workflows.
+          RepairPOS plans start at $29 USD a month for repair tickets, customer records and payments. Ask about custom pricing for larger teams, multiple shops or integrations.
         </p>
       </div>
 
@@ -43,8 +42,7 @@ $pageDescription = "Simple RepairPOS pricing for repair shop point of sale and j
             </div>
 
             <p>
-              For independent repair shops that want to replace paper tickets,
-              organise jobs and manage customers from one system.
+              For independent shops managing repair tickets, customers and payments.
             </p>
 
             <ul class="check-list">
@@ -80,18 +78,17 @@ $pageDescription = "Simple RepairPOS pricing for repair shop point of sale and j
             </div>
 
             <p>
-              For larger repair businesses, multi-staff teams, specialist workflows,
-              custom onboarding, integrations or higher-volume operations.
+              For teams that need help with setup, extra locations or integrations.
             </p>
 
             <ul class="check-list">
               <li><i class="bi bi-check-circle"></i>Everything in Starter</li>
-              <li><i class="bi bi-check-circle"></i>Multiple staff workflows</li>
+              <li><i class="bi bi-check-circle"></i>Work allocation across your team</li>
               <li><i class="bi bi-check-circle"></i>SMS customer notifications</li>
               <li><i class="bi bi-check-circle"></i>Custom repair statuses</li>
               <li><i class="bi bi-check-circle"></i>Advanced reporting</li>
-              <li><i class="bi bi-check-circle"></i>Workflow setup and onboarding</li>
-              <li><i class="bi bi-check-circle"></i>Support for specialist repair categories</li>
+              <li><i class="bi bi-check-circle"></i>Setup and staff training</li>
+              <li><i class="bi bi-check-circle"></i>Setup for your type of repairs</li>
               <li><i class="bi bi-check-circle"></i>Integration support where available</li>
             </ul>
 
@@ -108,9 +105,9 @@ $pageDescription = "Simple RepairPOS pricing for repair shop point of sale and j
 
       <div class="cta-bar mt-5 d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-4">
         <div>
-          <h2>Not sure which setup fits?</h2>
+          <h2>Need help choosing?</h2>
           <p>
-            Tell us how your repair shop works and we’ll recommend the right RepairPOS setup.
+            Tell us how many shops and staff you have, and what you need to manage.
           </p>
         </div>
 

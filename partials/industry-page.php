@@ -5,16 +5,6 @@ $pageTitle = $industry['title'];
 $pageDescription = $industry['description'];
 $hasAppScreenshots = true;
 $escape = static fn($value) => htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
-$screenshot = '/assets/images/app/' . $industry['image'];
-[$screenWidth, $screenHeight] = getimagesize(dirname(__DIR__) . $screenshot);
-$tools = [
-    ['camera', 'Photos & item notes', $industry['tools'][0], 'repair-photos'],
-    [$industryId === 'dry-cleaning' ? 'tags' : 'box-seam', $industryId === 'dry-cleaning' ? 'Services & prices' : 'Parts & materials', $industry['tools'][1], $industryId === 'dry-cleaning' ? 'products-and-stock' : 'parts-and-materials'],
-    ['people', 'Staff & instructions', $industry['tools'][2], 'staff-and-workshop'],
-    ['credit-card', 'Deposits & balances', $industry['tools'][3], 'quotes-and-payments'],
-    ['chat-dots', 'Customer updates', $industry['tools'][4], 'customer-updates'],
-    ['bar-chart', 'Sales & reporting', $industry['tools'][5], 'reports'],
-];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,73 +24,41 @@ $tools = [
     </div>
   </section>
 
-  <section class="section-padding" aria-labelledby="industry-items-title">
-    <div class="container px-4 px-lg-5">
-      <div class="row align-items-center g-4 g-lg-5">
-        <div class="col-lg-7">
-          <figure class="how-screen mb-0 industry-screen">
-            <button type="button" class="app-screenshot-trigger" data-bs-toggle="modal" data-bs-target="#appScreenshotPreview" data-screen="<?= $escape($screenshot) ?>" data-title="<?= $escape($industry['name']) ?> item tracking" data-alt="RepairPOS sample order: <?= $escape($industry['items'][0][0]) ?> ready and <?= $escape($industry['items'][1][0]) ?> working" aria-label="Enlarge <?= $escape(strtolower($industry['name'])) ?> screenshot">
-              <img src="<?= $escape($screenshot) ?>" class="app-screenshot" width="<?= $screenWidth ?>" height="<?= $screenHeight ?>" alt="RepairPOS sample order: <?= $escape($industry['items'][0][0]) ?> ready and <?= $escape($industry['items'][1][0]) ?> working" loading="lazy" decoding="async">
-            </button>
-            <figcaption>Sample <?= $escape(strtolower($industry['name'])) ?> order <span><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Enlarge</span></figcaption>
-          </figure>
-        </div>
-        <div class="col-lg-5">
-          <h2 id="industry-items-title"><?= $escape($industry['trackingTitle']) ?></h2>
-          <p class="text-muted-custom mt-3"><?= $escape($industry['pain']) ?> <?= $escape($industry['answer']) ?></p>
-          <ul class="check-list mb-3">
-            <?php foreach ($industry['details'] as $detail): ?>
-              <li><i class="bi bi-check-circle" aria-hidden="true"></i><?= $escape($detail) ?></li>
-            <?php endforeach; ?>
-          </ul>
-          <a class="how-guide-link" href="/item-tracking"><?= $escape($industry['trackingLink']) ?> <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding pt-0" aria-labelledby="industry-flow-title">
+  <section class="section-padding industry-example" aria-labelledby="industry-flow-title">
     <div class="container px-4 px-lg-5">
       <div class="section-title mb-4">
         <h2 id="industry-flow-title"><?= $escape($industry['flowTitle']) ?></h2>
-        <p><?= $escape($industry['flowIntro']) ?></p>
+        <p><?= $escape($industry['exampleIntro']) ?></p>
       </div>
-      <ol class="row g-3 g-lg-4 list-unstyled mb-0">
-        <?php foreach ($industry['steps'] as $index => $step): ?>
-          <li class="col-md-6 col-xl-4">
-            <div class="how-basic-card h-100 d-flex flex-column">
-              <div class="d-flex align-items-center gap-3 mb-3">
-                <span class="workflow-number" aria-hidden="true"><?= $index + 1 ?></span>
-                <h3 class="mb-0"><?= $escape($step['title']) ?></h3>
-              </div>
-              <p><?= $escape($step['text']) ?></p>
-              <a href="/<?= $escape($step['link']) ?>" class="how-guide-link mt-auto">View guide <span class="visually-hidden">: <?= $escape($step['title']) ?></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-            </div>
-          </li>
-        <?php endforeach; ?>
-      </ol>
+      <?php
+      $carouselId = 'industry-panels';
+      $carouselLabel = $industry['name'] . ' example order, from booking to collection';
+      $previewPanels = $industry['sequence'];
+      include __DIR__ . '/screenshot-carousel.php';
+      ?>
+      <p class="how-features-link text-center mt-3 mb-0"><a href="/how-it-works">Booking and collection guides</a></p>
     </div>
   </section>
 
-  <section class="section-padding pt-0" aria-labelledby="industry-tools-title">
+  <section class="section-padding pt-4" aria-labelledby="industry-features-title">
     <div class="container px-4 px-lg-5">
       <div class="section-title mb-4">
-        <h2 id="industry-tools-title"><?= $escape($industry['toolsTitle']) ?></h2>
-        <p><?= $escape($industry['toolsIntro']) ?></p>
+        <h2 id="industry-features-title"><?= $escape($industry['featuresTitle']) ?></h2>
+        <p><?= $escape($industry['featuresIntro']) ?></p>
       </div>
       <div class="row g-3 g-lg-4">
-        <?php foreach ($tools as [$icon, $title, $description, $link]): ?>
+        <?php foreach ($industry['features'] as $feature): ?>
           <div class="col-md-6 col-xl-4">
-            <div class="how-basic-card h-100">
-              <div class="feature-icon mb-3"><i class="bi bi-<?= $escape($icon) ?>" aria-hidden="true"></i></div>
-              <h3><?= $escape($title) ?></h3>
-              <p><?= $escape($description) ?></p>
-              <a class="how-guide-link" href="/<?= $escape($link) ?>"><?= $escape($title) ?> guide <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            <div class="how-basic-card h-100 d-flex flex-column">
+              <div class="feature-icon mb-3"><i class="bi bi-<?= $escape($feature['icon']) ?>" aria-hidden="true"></i></div>
+              <h3><?= $escape($feature['title']) ?></h3>
+              <p><?= $escape($feature['text']) ?></p>
+              <a class="how-guide-link mt-auto" href="/<?= $escape($feature['guide']) ?>">View guide<span class="visually-hidden">: <?= $escape($feature['title']) ?></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
         <?php endforeach; ?>
       </div>
-      <p class="how-features-link text-center mt-4 mb-0">See <a href="/features">all features and integrations</a> or follow the <a href="/how-it-works">full RepairPOS workflow</a>.</p>
+      <p class="how-features-link text-center mt-4 mb-0"><a href="/features">See all RepairPOS features</a></p>
     </div>
   </section>
 
@@ -115,5 +73,6 @@ $tools = [
 </main>
 <?php include __DIR__ . '/footer.php'; ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/screenshot-carousel.js"></script>
 </body>
 </html>

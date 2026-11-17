@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "RepairPOS Features | Repair Shop POS Software";
-$pageDescription = "Explore RepairPOS features for repair shops including job tracking, customer management, invoices, SMS updates, quoting, workflow tools and more.";
+$pageDescription = "RepairPOS features for booking repairs, tracking items, taking payments, managing stock and keeping customers updated.";
 ?>
 
 <!DOCTYPE html>
@@ -20,12 +20,10 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
       <div class="contact-banner-content">
         <div class="eyebrow">RepairPOS Features</div>
 
-        <h1>Built for modern repair businesses.</h1>
+        <h1>Repair shop software features.</h1>
 
         <p>
-          RepairPOS combines job management, customer communication,
-          quoting, invoicing and workflow tools into one platform built
-          specifically for repair shops.
+          Use RepairPOS to manage repair bookings, item tracking, customer records and payments. The features below cover work at the counter, on the bench and at collection.
         </p>
       </div>
 
@@ -34,16 +32,6 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
 
   <section class="section-padding">
     <div class="container px-4 px-lg-5">
-
-      <div class="section-title">
-        <h2>Everything your repair shop needs</h2>
-
-        <p>
-          From drop-off to pickup, RepairPOS helps shops manage repairs,
-          customers, staff, payments and communication without paper
-          tickets or disconnected systems.
-        </p>
-      </div>
 
       <div class="row g-4">
 
@@ -83,17 +71,16 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
               </div>
 
               <p class="feature-side-title">
-                Customers & CRM
+                Customer Records
               </p>
             </div>
 
             <ul class="check-list">
-              <li><i class="bi bi-check-circle"></i>Customer database and profiles</li>
+              <li><i class="bi bi-check-circle"></i>Names and contact details</li>
               <li><i class="bi bi-check-circle"></i>Search by name, phone or email</li>
               <li><i class="bi bi-check-circle"></i>Customer repair history</li>
-              <li><i class="bi bi-check-circle"></i>Repeat customer tracking</li>
               <li><i class="bi bi-check-circle"></i>Internal customer notes</li>
-              <li><i class="bi bi-check-circle"></i>Email and communication logs</li>
+              <li><i class="bi bi-check-circle"></i>Message history</li>
             </ul>
 
           </div>
@@ -114,11 +101,11 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
             </div>
 
             <ul class="check-list">
-              <li><i class="bi bi-check-circle"></i>Repair quoting tools</li>
+              <li><i class="bi bi-check-circle"></i>Repair quotes</li>
               <li><i class="bi bi-check-circle"></i>Invoices and receipts</li>
-              <li><i class="bi bi-check-circle"></i>Deposits and balance tracking</li>
-              <li><i class="bi bi-check-circle"></i>Integrated payment workflows</li>
-              <li><i class="bi bi-check-circle"></i>Outstanding balance tracking</li>
+              <li><i class="bi bi-check-circle"></i>Deposits</li>
+              <li><i class="bi bi-check-circle"></i>Cash and card payments</li>
+              <li><i class="bi bi-check-circle"></i>Outstanding balances</li>
               <li><i class="bi bi-check-circle"></i>Printable repair and tax invoices</li>
             </ul>
 
@@ -135,17 +122,16 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
               </div>
 
               <p class="feature-side-title">
-                Inventory Tracking
+                Products & Stock
               </p>
             </div>
 
             <ul class="check-list">
-              <li><i class="bi bi-check-circle"></i>Track repair materials and products</li>
-              <li><i class="bi bi-check-circle"></i>Inventory adjustments</li>
-              <li><i class="bi bi-check-circle"></i>Low stock visibility</li>
-              <li><i class="bi bi-check-circle"></i>Product and service management</li>
-              <li><i class="bi bi-check-circle"></i>Inventory linked to invoices</li>
-              <li><i class="bi bi-check-circle"></i>Workshop supply tracking</li>
+              <li><i class="bi bi-check-circle"></i>Repair parts and retail products</li>
+              <li><i class="bi bi-check-circle"></i>Stock adjustments</li>
+              <li><i class="bi bi-check-circle"></i>Low stock levels</li>
+              <li><i class="bi bi-check-circle"></i>Product and service catalogue</li>
+              <li><i class="bi bi-check-circle"></i>Products listed on invoices</li>
             </ul>
 
           </div>
@@ -161,17 +147,17 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
               </div>
 
               <p class="feature-side-title">
-                Staff & Workflow
+                Staff & Workshop
               </p>
             </div>
 
             <ul class="check-list">
               <li><i class="bi bi-check-circle"></i>Multiple staff accounts</li>
-              <li><i class="bi bi-check-circle"></i>Job assignment tracking</li>
-              <li><i class="bi bi-check-circle"></i>Repair workflow stages</li>
-              <li><i class="bi bi-check-circle"></i>Productivity tracking</li>
-              <li><i class="bi bi-check-circle"></i>Staff sales visibility</li>
-              <li><i class="bi bi-check-circle"></i>Workshop activity monitoring</li>
+              <li><i class="bi bi-check-circle"></i>Repairs assigned to workers</li>
+              <li><i class="bi bi-check-circle"></i>Repair status updates</li>
+              <li><i class="bi bi-check-circle"></i>Completed work by worker</li>
+              <li><i class="bi bi-check-circle"></i>Sales by staff member</li>
+              <li><i class="bi bi-check-circle"></i>Workshop activity</li>
             </ul>
 
           </div>
@@ -187,17 +173,17 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
               </div>
 
               <p class="feature-side-title">
-                Reporting & Insights
+                Sales & Workshop Reports
               </p>
             </div>
 
             <ul class="check-list">
               <li><i class="bi bi-check-circle"></i>Sales reporting</li>
-              <li><i class="bi bi-check-circle"></i>Repair volume analytics</li>
-              <li><i class="bi bi-check-circle"></i>Revenue tracking</li>
-              <li><i class="bi bi-check-circle"></i>Staff performance insights</li>
-              <li><i class="bi bi-check-circle"></i>Business activity dashboards</li>
-              <li><i class="bi bi-check-circle"></i>Customer and repair trends</li>
+              <li><i class="bi bi-check-circle"></i>Repair totals</li>
+              <li><i class="bi bi-check-circle"></i>Revenue totals</li>
+              <li><i class="bi bi-check-circle"></i>Staff reports</li>
+              <li><i class="bi bi-check-circle"></i>Sales dashboards</li>
+              <li><i class="bi bi-check-circle"></i>Customer and repair reports</li>
             </ul>
 
           </div>
@@ -221,7 +207,7 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
               <li><i class="bi bi-check-circle"></i>Email notifications</li>
               <li><i class="bi bi-check-circle"></i>SMS customer updates</li>
               <li><i class="bi bi-check-circle"></i>Ready for pickup alerts</li>
-              <li><i class="bi bi-check-circle"></i>Quote approval workflows</li>
+              <li><i class="bi bi-check-circle"></i>Quote approvals</li>
               <li><i class="bi bi-check-circle"></i>Automated reminders</li>
               <li><i class="bi bi-check-circle"></i>Custom message templates</li>
             </ul>
@@ -247,9 +233,8 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
               <li><i class="bi bi-check-circle"></i>AI-assisted quote drafting</li>
               <li><i class="bi bi-check-circle"></i>Photo-based repair analysis</li>
               <li><i class="bi bi-check-circle"></i>Automated email drafting</li>
-              <li><i class="bi bi-check-circle"></i>Workflow automation tools</li>
-              <li><i class="bi bi-check-circle"></i>Enquiry management pipelines</li>
-              <li><i class="bi bi-check-circle"></i>Continuous feature development</li>
+              <li><i class="bi bi-check-circle"></i>Automated job tasks</li>
+              <li><i class="bi bi-check-circle"></i>Enquiry tracking</li>
             </ul>
 
           </div>
@@ -272,10 +257,10 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
     <ul class="check-list">
       <li><i class="bi bi-check-circle"></i>Square payment integration</li>
       <li><i class="bi bi-check-circle"></i>Google Cloud image storage</li>
-      <li><i class="bi bi-check-circle"></i>OpenAI-powered automation tools</li>
+      <li><i class="bi bi-check-circle"></i>AI tools using OpenAI</li>
       <li><i class="bi bi-check-circle"></i>Email marketing integrations</li>
       <li><i class="bi bi-check-circle"></i>SMS and notification providers</li>
-      <li><i class="bi bi-check-circle"></i>Custom API and workflow integrations</li>
+      <li><i class="bi bi-check-circle"></i>Custom API connections</li>
     </ul>
 
   </div>
@@ -301,10 +286,10 @@ $pageDescription = "Explore RepairPOS features for repair shops including job tr
               </div>
 
               <div>
-                <h2>RepairPOS grows with your business.</h2>
+                <h2>See the features your shop needs</h2>
 
                 <p class="mb-0">
-                  New tools and improvements are continuously being developed based on real repair shop workflows. Whether you're a single-store business or a growing multi-location operation, RepairPOS is designed to evolve alongside your workshop.
+                  Tell us what you repair and how your team handles bookings, workshop jobs and collection. We’ll show you the relevant features and discuss setup for your shop.
                 </p>
               </div>
 

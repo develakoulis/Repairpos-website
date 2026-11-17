@@ -1,7 +1,7 @@
 
 <?php
-$pageTitle = "RepairPOS Case Studies | Real Repair Businesses Using RepairPOS";
-$pageDescription = "See how real repair businesses use RepairPOS to manage repairs, customers, quotes, payments, photos and workshop workflow.";
+$pageTitle = "RepairPOS Case Studies | Repair Shops Using RepairPOS";
+$pageDescription = "Read how Evans uses RepairPOS for shoe, bag and leather repairs in its Melbourne workshop.";
 ?>
 
 <!DOCTYPE html>
@@ -112,12 +112,11 @@ $pageDescription = "See how real repair businesses use RepairPOS to manage repai
         </div>
 
         <h1>
-          Real repair businesses using RepairPOS.
+          RepairPOS case studies
         </h1>
 
         <p>
-          See how repair shops use RepairPOS to manage jobs, customers, quotes,
-          payments, photos and workshop workflow.
+          Read how repair shops use RepairPOS to book customer jobs, track workshop repairs and manage payments. The Evans case study looks at shoe, bag and leather repairs.
         </p>
 
       </div>
@@ -145,9 +144,7 @@ $pageDescription = "See how real repair businesses use RepairPOS to manage repai
               </h2>
 
               <p>
-                Established in 1956, Evans is one of Australia's best-known shoe repair
-                and leather restoration businesses. Learn how RepairPOS helps manage
-                high-volume repairs, customer communication, payments and workshop workflow.
+                Evans has repaired shoes, bags and leather goods in Melbourne since 1956. Read how its team uses RepairPOS at the counter and in the workshop.
               </p>
 
               <div class="d-flex flex-wrap gap-2 mb-4">
@@ -157,7 +154,7 @@ $pageDescription = "See how real repair businesses use RepairPOS to manage repai
               </div>
 
 <a href="/case-studies/evans-shoe-bag-repair">
-                  Learn More
+                  Read the case study
               </a>
 
             </div>
@@ -186,11 +183,10 @@ $pageDescription = "See how real repair businesses use RepairPOS to manage repai
               </div>
 
               <div>
-                <h2>Want to simplify your repair workflow?</h2>
+                <h2>Could this work for your shop?</h2>
 
                 <p class="mb-0">
-                  RepairPOS helps repair businesses manage job tickets,
-                  customer communication, photos, quotes, payments and reporting.
+                  Book a demo and talk us through the repairs your team handles.
                 </p>
               </div>
 
@@ -198,7 +194,7 @@ $pageDescription = "See how real repair businesses use RepairPOS to manage repai
           </div>
 
           <div class="col-lg-4 text-lg-end">
-            <a class="btn btn-primary btn-lg" href="contact">
+            <a class="btn btn-primary btn-lg" href="/contact">
               Book a Demo
             </a>
           </div>

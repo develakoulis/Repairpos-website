@@ -19,11 +19,10 @@ $pageDescription = "Contact RepairPOS to book a demo or start a free trial of PO
       <div class="contact-banner-content">
         <div class="eyebrow">Contact RepairPOS</div>
 
-        <h1>Book a demo.</h1>
+        <h1>Book a RepairPOS demo.</h1>
 
         <p>
-          Tell us about your repair shop and we’ll help you
-          find the right setup.
+          Tell us what your shop repairs and how you manage jobs today. We’ll show you the booking, workshop and payment features relevant to your business.
         </p>
       </div>
     </div>
@@ -118,12 +117,12 @@ $pageDescription = "Contact RepairPOS to book a demo or start a free trial of PO
               </div>
 
               <p class="feature-side-title">
-                Core Features
+                Repair shop software demo
               </p>
             </div>
 
             <p class="text-muted-custom mb-4">
-              RepairPOS gives repair shops the tools to manage jobs from intake to pickup, without juggling paper tickets, spreadsheets or separate systems.
+              A demo covers the jobs your team handles, from booking in an item to collecting payment. You can also ask about stock, customer updates and setup.
             </p>
 
             <ul class="check-list">

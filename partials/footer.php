@@ -13,8 +13,8 @@
       <div class="footer-links">
         <a href="/how-it-works">How It Works</a>
         <a href="/repairpos-guides">User Guides</a>
-        <a href="index.php#features">Features</a>
-        <a href="contact.php">Contact</a>
+        <a href="/features">Features</a>
+        <a href="/contact">Contact</a>
       </div>
 
     </div>

@@ -18,13 +18,13 @@ require __DIR__ . '/partials/repair-guide-data.php';
     <div class="container px-4 px-lg-5">
       <div class="eyebrow">Using RepairPOS</div><h1>User guides</h1>
       <p>Follow a repair from booking to collection, or find help with an everyday task.</p>
-      <a class="btn btn-outline-light mt-4" href="/how-it-works">View the overview</a>
+      <a class="btn btn-outline-light mt-4" href="/how-it-works">How RepairPOS works</a>
     </div>
   </header>
-  <?php foreach (['Store order flow', 'Everyday tools'] as $group): ?>
-    <section class="section-padding" aria-labelledby="<?= $group === 'Store order flow' ? 'flow-guides' : 'daily-guides' ?>">
+  <?php foreach (['Booking to collection', 'Everyday tools'] as $group): ?>
+    <section class="section-padding" aria-labelledby="<?= $group === 'Booking to collection' ? 'flow-guides' : 'daily-guides' ?>">
       <div class="container px-4 px-lg-5">
-        <div class="section-title mb-4"><h2 id="<?= $group === 'Store order flow' ? 'flow-guides' : 'daily-guides' ?>"><?= $group ?></h2></div>
+        <div class="section-title mb-4"><h2 id="<?= $group === 'Booking to collection' ? 'flow-guides' : 'daily-guides' ?>"><?= $group ?></h2></div>
         <div class="row g-3">
           <?php foreach ($repairGuides as $id => $guide): if ($guide['group'] !== $group) continue; ?>
             <div class="col-md-6 col-lg-4">
@@ -35,7 +35,7 @@ require __DIR__ . '/partials/repair-guide-data.php';
       </div>
     </section>
   <?php endforeach; ?>
-  <section class="pb-5"><div class="container px-4 px-lg-5"><div class="cta-bar"><h2>Looking for more features?</h2><p>Visit <a href="/features">Features</a> for integrations, automation and other capabilities.</p></div></div></section>
+  <section class="pb-5"><div class="container px-4 px-lg-5"><div class="cta-bar"><h2>See what else is included</h2><p>Visit <a href="/features">Features</a> for stock, reporting, integrations and other tools.</p></div></div></section>
 </main>
 
 <?php include 'partials/footer.php'; ?>
